@@ -1,0 +1,135 @@
+iframe{
+         width: 1516px;
+         height:1200px;
+        }
+       
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #f8f8f8;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 15px;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            z-index: 1000;
+            top: 100%;
+            left: 0;
+        }
+        .menu:hover .dropdown {
+            display: block;
+        }
+
+        .herbarium-checklist:hover .families {
+            display: block;
+        }
+
+        .families {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        .submenu {
+            position: absolute;
+        }
+        .sub-dropdown {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            z-index: 1000;
+        }
+        
+        .submenu.family1:hover .sub-dropdown {
+            display: block;
+        }
+
+        .dropdown a, .families a, .sub-dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dropdown a:hover, .families a:hover, .sub-dropdown a:hover {
+            background-color: #ddd;
+        }
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 12; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 200px; /* Optional padding between text and image */
+            font-size: 19px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+            white-space: 45%;
+            margin-left: 100px;
+        }
+        .left  {
+    font-family: "Footlight MT Light", sans-serif; /* Fallback to sans-serif if unavailable */
+    
+}
+.center-container {
+    display: flex;
+    flex-direction: row; /* Place items side by side */
+    align-items: flex-start; /* Align the text and image at the top */
+    justify-content: space-between; /* Space the elements */
+    height: 90vh; /* 90% of the viewport height */
+    padding: 20px; /* Optional padding for spacing */
+}
+
+/* Style for the paragraph container */
+.left {
+    flex: 1; /* Take up available space */
+    text-align: justify; /* Justify the text to make lines equal in length */
+    padding-right: 20px; /* Optional padding between text and image */
+    font-size: 19px; /* Adjust font size if necessary */
+    line-height: 1.6; /* Adjust line spacing for readability */
+    max-width: 50%; /* Limit the width of the text to avoid stretching */
+}
+
+/* Style for the image container */
+.right img {
+    width: 500px; /* Set the width of the image */
+    height:700px; /* Maintain aspect ratio */
+}

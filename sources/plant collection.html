@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mission and Objectives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Arabic Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding-bottom: 80px; /* Space at the bottom */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      direction: ltr;
+    }
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 5%;
+  gap: 40px;
+}
+
+.box, .box.rtl {
+  flex: 1 1 45%;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+    
+    .box {
+      flex: 1 1 45%;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .box h2 {
+      font-size: 24px;
+      color: #006400;
+      margin-bottom: 20px;
+    }
+
+    .box ul {
+      padding-left: 20px;
+    }
+
+    .box ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    /* Arabic styling */
+    .rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Cairo', sans-serif;
+      font-size: 18px;
+    }
+
+    .rtl h2 {
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="position: relative; width: 100%; height: 120px; border-radius: 8px; overflow: hidden;">
+  <!-- Image -->
+  <img src="1000_F_512164771_mCQUWVfAhaVWpjTVGYuSWRJL2z3hIQ3s.jpg"
+       alt="صورة توضيحية"
+       style="width: 100%; height: 100%; object-fit: cover;">
+  
+  <!-- Dark overlay -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);  /* Adjust darkness */
+  "></div>
+</div>
+
+    <div style="
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+">
+  <span style="font-family: 'Times New Roman', 'Headings CS', serif;">Plant Collection</span>
+  <br>
+  <p style="font-size: 15px; margin: 0;">ABOUT US / plant collection</p>
+</div>
+
+    <!-- English -->
+    <div class="box">
+      <h2>About the Plant Collection</h2>
+      <p>Explore Our Plant Collection</p>
+      <p>Our herbarium houses a growing collection of dried plant specimens preserved 
+      according to established scientific standards. This collection is meticulously organized 
+      based on scientific classification, with specimens categorized by plant families and the 
+      various species within each family.</p>
+      <p>Each specimen in our collection is accompanied by detailed and accurate data, including:</p>
+      <ul>
+        <li>Scientific Name</li>
+        <li>Family Name</li>
+        <li>Collection Locality</li>
+        <li>Collection Date</li>
+        <li>Collector's Name</li>
+        <li>Determiner's Name (Identifier)</li>
+      </ul>
+      <p>This precise information makes each specimen a valuable scientific record, 
+      documenting the plant's existence in a specific time and place.</p>
+    </div>
+    
+    <!-- Arabic -->
+<div class="box rtl" lang="ar">
+  <h2>حول مجموعة النباتات</h2>
+      <p>استكشف مجموعة النباتات لدينا</p>
+      <p>يحتوي معشبنا على مجموعة متنامية من عينات النباتات المجففة المحفوظة 
+      وفقًا للمعايير العلمية المعتمدة. يتم تنظيم هذه المجموعة بعناية 
+      وفقًا للتصنيف العلمي، حيث تُصنف العينات حسب العائلات النباتية 
+      والأنواع المختلفة داخل كل عائلة.</p>
+      <p>كل عينة في مجموعتنا مصحوبة ببيانات دقيقة ومفصلة، تتضمن:</p>
+      <ul>
+        <li>الاسم العلمي</li>
+        <li>اسم العائلة النباتية</li>
+        <li>مكان الجمع</li>
+        <li>تاريخ الجمع</li>
+        <li>اسم الجامع</li>
+        <li>اسم المعرّف (الذي حدد النوع)</li>
+      </ul>
+      <p>تجعل هذه المعلومات الدقيقة كل عينة سجلاً علمياً قيّماً، 
+      يوثق وجود النبات في وقت ومكان معينين.</p>
+</div>
+
+
+  <!-- Footer spacing -->
+  <div style="height: 80px;"></div>
+
+</body>
+</html>

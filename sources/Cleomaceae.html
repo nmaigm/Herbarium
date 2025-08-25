@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Groups</title>
+  <style>
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px 40px;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    .species {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    .link-groups {
+      display: flex;
+      gap: 40px; /* Horizontal space between each column */
+      flex-wrap: nowrap;
+      margin-top: 30px;
+      justify-content: center;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      text-align:left ;
+      gap: 15px;
+      min-width: 250px;
+    }
+
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Changed from center to flex-start */
+      margin: 0;
+      min-height: 100vh;
+      width: 100vw;
+      overflow-x: auto;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      padding-top: 0; /* Ensure no padding at top */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px; /* Reduced from 50px */
+      margin-top: 100px; /* Ensure no margin at top */
+      padding-top: 0; /* Ensure no padding at top */
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+      border-bottom: 4px solid #666;
+      padding-bottom: 10px;
+    }
+
+    a {
+      font-size: 21px;
+      color: #2e3f06;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #879f49cc;
+    }
+  </style>
+    <link rel="stylesheet" href="design.css"></head>
+</head>
+<body>
+  <div class="container">
+    <div class="link-groups">
+
+<!-- Column 1 -->
+<div class="group">
+  <div class="species"><a href="Cleome droserifolia (Forssk.) Delile.html"><i>Cleome droserifolia</i> (Forssk.) Delile</a></div>
+</div>
+
+    </div>
+  </div>
+</body>
+
+</html>

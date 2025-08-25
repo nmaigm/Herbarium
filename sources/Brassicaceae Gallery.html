@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .photo-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo-description {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            border-bottom: 4px solid #666;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .photo_1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 235px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .photo_1 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 235px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:268px ;
+            top:400px ;
+
+        }
+        .photo_4 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+
+        .photo_6{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 235px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            right:253px ;
+            top:400px ;
+
+        }
+        .photo_6 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_9{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 390px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:268px ;
+            top:920px ;
+
+        }
+        .photo_9 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_10{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 390px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:608px ;
+            top:920px ;
+
+        }
+        .photo_10 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_11{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:608px ;
+            top: 1360px ;
+
+        }
+        .photo_11 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_12{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 260px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:948px ;
+            top: 1160px ;
+
+        }
+        .photo_12 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_13{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            right: 948px ;
+            top: 1360px ;
+
+        }
+        .photo_13 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Apiacea Gallery</h1>
+    <div class="gallery">
+        <div class="photo_1">
+            <img src=".PNG" alt="Photo 1" class="Photo_1">
+            <div class="photo-description"><i>photo name 1</i></div>
+        </div>
+        <div class="photo-container">
+            <img src=".PNG" alt="Photo 2">
+            <div class="photo-description"><i>photo name 2</i></div>
+        </div>
+        <div class="photo_1">
+            <img src=".PNG" alt="Photo 3">
+            <div class="photo-description"><i>photo name 3</i></div>
+        </div>
+        <div class="photo_4">
+            <img src=".PNG" alt="Photo 4">
+            <div class="photo-description"><i>photo name 4</i></div>
+        </div>
+        <div class="photo_1">
+            <img src=".PNG" alt="Photo 5">
+            <div class="photo-description"><i>photo name 5</i></div>
+        </div>
+        <div class="photo_6">
+            <img src=".PNG" alt="Photo 6">
+            <div class="photo-description"><i>photo name 6</i></div>
+        </div>
+        <div class="photo_1">
+            <img src=".PNG" alt="Photo 7">
+            <div class="photo-description"><i>photo name 7</i></div>
+        </div>
+        <div class="photo-container">
+            <img src=".PNG" alt="Photo 8">
+            <div class="photo-description"><i>photo name 8</i>  </div>
+        </div>
+        <div class="photo_9">
+            <img src=".PNG" alt="Photo 9">
+            <div class="photo-description"><i>photo name 9</i></div>
+        </div>
+        <div class="photo_10">
+            <img src=".png" alt="Photo 10">
+            <div class="photo-description"><i>photo name 10</i></div>
+        </div>
+        <div class="photo_13">
+            <img src=".PNG" alt="Photo 11">
+            <div class="photo-description"><i>photo name 11</i></div>
+        </div>
+        <div class="photo_11">
+            <img src=".PNG" alt="Photo 12">
+            <div class="photo-description"><i>photo name 12</i></div>
+        </div>
+        <div class="photo_12">
+            <img src=".PNG" alt="Photo 13">
+            <div class="photo-description"><i>photo name 13</i></div>
+        </div>
+    </div>
+</body>
+</html>

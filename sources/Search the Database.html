@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mission and Objectives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Arabic Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding-bottom: 80px; /* Space at the bottom */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      direction: ltr;
+    }
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 5%;
+  gap: 40px;
+}
+
+.box, .box.rtl {
+  flex: 1 1 45%;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+    
+    .box {
+      flex: 1 1 45%;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .box h2 {
+      font-size: 24px;
+      color: #006400;
+      margin-bottom: 20px;
+    }
+
+    .box ul {
+      padding-left: 20px;
+    }
+
+    .box ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    /* Arabic styling */
+    .rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Cairo', sans-serif;
+      font-size: 18px;
+    }
+
+    .rtl h2 {
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="position: relative; width: 100%; height: 120px; border-radius: 8px; overflow: hidden;">
+  <!-- Image -->
+  <img src="1000_F_512164771_mCQUWVfAhaVWpjTVGYuSWRJL2z3hIQ3s.jpg"
+       alt="صورة توضيحية"
+       style="width: 100%; height: 100%; object-fit: cover;">
+  
+  <!-- Dark overlay -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);  /* Adjust darkness */
+  "></div>
+</div>
+
+    <div style="
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+">
+  <span style="font-family: 'Times New Roman', 'Headings CS', serif;">Search and Access to Specimens</span>
+  <br>
+  <p style="font-size: 15px; margin: 0;">ABOUT US / search and access to specimens</p>
+</div>
+
+    <!-- English -->
+    <div class="box">
+      <h2>Search and Access to Specimens</h2>
+<p>Search the Database</p>
+<p>We invite students, researchers, and botany enthusiasts to explore the treasures of the 
+Digital Herbarium. You can now easily browse our collection and search for specific 
+specimens through our online database.</p>
+<p>Use the available search tools to find specimens based on scientific name, family, or any 
+other recorded data. The interface is designed to be user-friendly, providing quick access 
+to the information you need for your studies and research.</p>
+
+    </div>
+    
+    <!-- Arabic -->
+<div class="box rtl" lang="ar">
+  <h2>البحث والوصول إلى العينات</h2>
+  <p>ابحث في قاعدة البيانات</p>
+  <p>ندعو الطلاب والباحثين ومحبي علم النبات إلى استكشاف كنوز المعشب الرقمي. 
+  يمكنكم الآن تصفح مجموعتنا بسهولة والبحث عن عينات محددة من خلال قاعدة البيانات الإلكترونية.</p>
+  <p>استخدم أدوات البحث المتاحة للعثور على العينات بناءً على الاسم العلمي أو العائلة أو أي بيانات أخرى مسجلة. 
+  تم تصميم الواجهة لتكون سهلة الاستخدام، مما يتيح وصولاً سريعًا إلى المعلومات التي تحتاجها لدراساتك وبحوثك.</p>
+</div>
+
+
+  <!-- Footer spacing -->
+  <div style="height: 80px;"></div>
+
+</body>
+</html>

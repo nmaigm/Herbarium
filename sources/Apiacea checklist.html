@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Groups</title>
+<style>
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px 40px;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    .species {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    .link-groups {
+      display: flex;
+      gap: 40px; /* Horizontal space between each column */
+      flex-wrap: nowrap;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      text-align:left ;
+      gap: 15px;
+      min-width: 250px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Changed from center to flex-start */
+      margin: 0;
+      min-height: 100vh;
+      width: 100vw;
+      overflow-x: auto;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      padding-top: 0; /* Ensure no padding at top */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px; /* Reduced from 50px */
+      margin-top: 100px; /* Ensure no margin at top */
+      padding-top: 0; /* Ensure no padding at top */
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+      border-bottom: 4px solid #666;
+      padding-bottom: 10px;
+    }
+
+    
+  </style>
+<link rel="stylesheet" href="design.css"></head>
+<body>
+    <div class="container">
+    <div class="link-groups">
+        <div class="group">
+            <a href="Ammi m.html"><i>Ammi majus </i>L</a>
+            <a href="Ammi v.html"><i>Ammi visnaga</i> (L.) Lam</a>
+            <a href="Anethum.html"><i>Anethum graveolens</i> L</a>
+            <a href="Apium graveolens.html"><i>Apium graveolens</i> L</a>
+            <a href="Apium nodiflorum.html"><i>Apium nodiflorum</i> (L.) Lag.</a>
+           <a href="Coriandrum.html"><i>Coriandrum sativum</i> L</a>     
+            </div>
+            <div class="group">
+           <a href="Daucus carota.html"><i>Daucus carota</i></a>
+            <a href="Deverra.html"><i>Deverra tortuosa</i> (Desf.) DC</a>
+            <a href="Eryngium.html"><i>Eryngium campestre </i>L</a>
+            <a href="Eryngium c.html"><i>Eryngium creticum </i>Lam</a>
+            <a href="Eryngium g.html"><i>Eryngium glomeratum </i>Lam</a>
+            <a href="Feoniculum.html"><i>Foeniculum vulgare Mill</i></a>
+            </div>
+            <div class="group">
+            <a href="Pimpinella.html"><i>Pimpinella etbaica Schweinf</i></a>
+            <a href="pseduorlaya.html"><i>Pseudorlaya pumila </i>(L.) Grande</a>
+            <a href="Pycnocycla.html"><i>Pycnocycla tomentosa Decne</i></a>
+            <a href="Ridolfia.html"><i>Ridolfia segetum </i>(L.) Moris</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

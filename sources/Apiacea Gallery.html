@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+     
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .photo-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo-description {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            border-bottom: 4px solid #666;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .photo_1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 235px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .photo_1 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 235px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:268px ;
+            top:400px ;
+
+        }
+        .photo_4 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+
+        .photo_6{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 235px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            right:253px ;
+            top:400px ;
+
+        }
+        .photo_6 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_9{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 390px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:268px ;
+            top:920px ;
+
+        }
+        .photo_9 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_10{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 390px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:608px ;
+            top:920px ;
+
+        }
+        .photo_10 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_11{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:608px ;
+            top: 1360px ;
+
+        }
+        .photo_11 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_12{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 260px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left:948px ;
+            top: 1160px ;
+
+        }
+        .photo_12 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo_13{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            right: 948px ;
+            top: 1360px ;
+        }
+        .photo_13 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+
+    </style>
+    <link rel="stylesheet" href="design.css"></head>
+
+
+
+
+</head>
+<body>
+    
+
+    <h1>Apiacea Gallery</h1>
+    <div class="gallery">
+        <div class="photo_1">
+            <img id="myImg1" src="plant gallery/Ammi majus2.PNG" alt="Ammi majus L." onmouseover=" openimage('myImg1')"  style="width:100%;max-width:300px" >         
+            <div class="photo-description"><a href="file:///C:/Users/DELL/OneDrive/Sample5/index.html"><i>Ammi majus </i>L</a></div>
+        </div>
+        <div class="photo-container">
+            <img id="myImg2" src="plant gallery/Ammi visnaga2.PNG" alt="Ammi visnaga (L.) Lam." onmouseover="openimage('myImg2')" style="width:100%;max-width:300px" >         
+            <div class="photo-description"><a href="Ammi v.html"><i>Ammi visnaga</i> (L.) Lam</a></div>
+        </div>
+        <div class="photo_1">
+            <img id="myImg3" src="plant gallery/Anethum graveolens2.PNG" alt="Anethum graveolens L."onmouseover=" openimage('myImg3')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Anethum.html"><i>Anethum graveolens</i> L</a></div>
+        </div>
+        <div class="photo_4">
+            <img id="myImg4" src="plant gallery/Coriandrum sativum2.PNG" alt="Coriandrum sativum L."onmouseover=" openimage('myImg4')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Coriandrum.html"><i>Coriandrum sativum</i> L</a></div>
+        </div>
+        <div class="photo_1">
+            <img id="myImg5" src="plant gallery/Deverra tortuosa2.PNG" alt="Deverra tortuosa (Desf.) DC"onmouseover=" openimage('myImg5')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Deverra.html"><i>Deverra tortuosa</i> (Desf.) DC</a></div>
+        </div>
+        <div class="photo_6">
+            <img  id="myImg6" src="plant gallery/Eryngium campestre2.PNG" alt="Eryngium campestre L."onmouseover=" openimage('myImg6')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Eryngium.html"><i>Eryngium campestre </i>L</a></div>
+        </div>
+        <div class="photo_1">
+            <img  id="myImg7" src="plant gallery/Eryngium creticum2.PNG" alt="Eryngium creticum Lam."onmouseover=" openimage('myImg7')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Eryngium c.html"><i>Eryngium creticum </i>Lam</a>
+            </div>
+        </div>
+        <div class="photo-container">
+            <img id="myImg8" src="plant gallery/Eryngium glomeratum2.PNG" alt="Eryngium glomeratum Lam"onmouseover=" openimage('myImg8')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Eryngium g.html"><i>Eryngium glomeratum </i>Lam</a></div>
+        </div>
+        <div class="photo_9">
+            <img id="myImg9" src="plant gallery/Foeniculum vulgare2.PNG" alt="Foeniculum vulgare Mil"onmouseover=" openimage('myImg9')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Feoniculum.html"><i>Foeniculum vulgare Mill</i></a></div>
+        </div>
+        <div class="photo_10">
+            <img id="myImg10" src=".png" alt="Pimpinella etabica Schweinf"onmouseover=" openimage('myImg10')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Pimpinella.html"> <i>Pimpinella etbaica Schweinf</i></a></div>
+        </div>
+        <div class="photo_13">
+            <img id="myImg11" src="plant gallery/Pseudorlaya pumila (L.) Grande.PNG" alt="Pseudorlaya pumila (L.) Grande"onmouseover=" openimage('myImg11')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="pseduorlaya.html"> <i>Pseudorlaya pumila </i>(L.) Grande</a></div>
+        </div>
+        <div class="photo_11">
+            <img id="myImg12" src="plant gallery/Pycnocycla tomentosa2.PNG" alt="Pycnocycla tomentosa Decne"onmouseover=" openimage('myImg12')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Pycnocycla.html"> <i>Pycnocycla tomentosa Decne</i></a></div>
+        </div>
+        <div class="photo_12">
+            <img id="myImg13" src="plant gallery/Ridolfia segetum2.PNG" alt="Ridolfia segetum (L.) Moris"onmouseover=" openimage('myImg13')"  style="width:100%;max-width:300px">
+            <div class="photo-description"><a href="Ridolfia.html"> <i>Ridolfia segetum </i>(L.) Moris</a></div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+</body>
+<link rel="stylesheet" href="image view.css">
+<script src="image view.js" ></script>
+</html>
