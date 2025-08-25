@@ -1,0 +1,13 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+a {
+      font-size: 21px;
+      color: #2e3f06;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #879f49cc;
+    }
