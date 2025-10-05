@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Astragalus eremophilus</strong></i> Boiss.<br>
+      <i><span style="font-size: 19px; font-weight: normal;">Diagn. Pl. Orient. 2: 54 (1843).</span></i>
+    </h1>
+      
+    <p><strong>Synonyms:</strong><br>
+        <i>Astragalus falcinellus</i> Boiss., Diagn. Pl. Orient. 9: 63 (1849).<br>
+    </p>
+
+    <p><strong>Morphology:</strong><br>
+    Annual 15-25 cm, white-villous throughout; stems ascending or prostrate, branched from the base; stipules 2-3 mm, triangular; leaves 2.5-4 cm; leaflets 6-12, short-petioliolate, 0.4-1.2 x 0.2-0.5 cm, broadly elliptic to obovate, obtuse, truncate or retuse at the apex, white-villous on both surfaces; peduncles 1-4 cm; racemes 1-5-flowered; bracts 1.5-2 mm; calyx 3-5 mm, white-villous, the teeth longer than the tube; corolla 5-6 mm, pale yellow; pod 1.5-2.5 x 0.25-0.3 cm, 8-10 times as long as broad, strongly falcate, linear in outline, attenuate towards the apex, white-villose.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Astragalus eremophilus Boiss.png" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+

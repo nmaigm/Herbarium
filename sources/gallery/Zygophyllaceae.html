@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zygophyllaceae Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Zygophyllaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Fagonia arabica L. var. arabica.jpg" alt="Fagonia arabica L. var. arabica">
+      <button onclick="openPage('fagonia_arabica_var_arabica.html')">Fagonia arabica L. var. arabica</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Not Found">
+      <button onclick="openPage('fagonia_arabica_var_viscidissima.html')">Fagonia arabica L. var. viscidissima</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Fagonia bruguieri DC..jpg" alt="Fagonia bruguieri DC.">
+      <button onclick="openPage('fagonia_bruguieri.html')">Fagonia bruguieri DC.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Fagonia cretica L..jpg" alt="Fagonia cretica L.">
+      <button onclick="openPage('fagonia_cretica.html')">Fagonia cretica L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Fagonia glutinosa Delile.jpg" alt="Fagonia glutinosa Delile">
+      <button onclick="openPage('fagonia_glutinosa.html')">Fagonia glutinosa Delile</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Fagonia indica Burm.f..jpg" alt="Fagonia indica Burm.f.">
+      <button onclick="openPage('fagonia_indica.html')">Fagonia indica Burm.f.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Not Found">
+      <button onclick="openPage('fagonia_mollis_var_hispida.html')">Fagonia mollis Delile. var. hispida Zohary.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Not Found">
+      <button onclick="openPage('fagonia_taeckholmiana.html')">Fagonia taeckholmiana Hadidi</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Not Found">
+      <button onclick="openPage('fagonia_tenuifolia.html')">Fagonia tenuifolia Steud. & Hochst.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Tribules pentandrus Forssk..jpg" alt="Tribules pentandrus Forssk.">
+      <button onclick="openPage('tribules_pentandrus.html')">Tribules pentandrus Forssk.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Tribulus terrestris L..jpg" alt="Tribulus terrestris L.">
+      <button onclick="openPage('tribulus_terrestris.html')">Tribulus terrestris L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Zygophyllum album L.f..jpg" alt="Zygophyllum album L.f.">
+      <button onclick="openPage('zygophyllum_album.html')">Zygophyllum album L.f.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Zygophyllum dumosum Boiss..jpg" alt="Zygophyllum dumosum Boiss.">
+      <button onclick="openPage('zygophyllum_dumosum.html')">Zygophyllum dumosum Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Zygophyllum simplex L..jpg" alt="Zygophyllum simplex L.">
+      <button onclick="openPage('zygophyllum_simplex.html')">Zygophyllum simplex L.</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "/sources/gallery/species/" + page;
+    }
+  </script>
+</body>
+</html>

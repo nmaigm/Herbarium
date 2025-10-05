@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 400px; /* Set the width of the image */
+            height:600px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Fagonia arabica </strong></i>L. var. arabica<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Sp. Pl., ed. 1, 386 (1753).</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>Fagonia tilhoana </i>Maire, Bull. Mus. Hist. Nat. (Paris), sér. 2, 4: 907 (1932).<br>
+                <i>Fagonia arabica</i> L. var. tilhoana (Maire) Maire, Bull. Soc. Hist. Nat. Afr. Nord 28: 349 (1937).<br>
+                <i>Fagonia arabica</i> L. var. imamii Hadidi, Candollea 21: 21, f. 2B (1966).<br>
+                <i>Fagonia boulosii</i> Hadidi, Candollea 21: 27, f. 5B (1966).<br>
+                <i>Fagonia boulosii</i> Hadidi var. crameri Hadidi, Bot. Notiser 125: 527 (1972).<br>
+                <i>Fagonia arabica</i> L. var. negevensis Zohary, Fl. Palaest. 2: 458 (1972).<br>
+            </p> 
+            <p><strong>Morphology:</strong><br>
+            Low shrub 20-60 cm, entirely covered with sessile or stalked capitate glands, often with adhering sand grains; stems terete, striate; stipular spines to 4 cm; lower leaves 3-foliolate, the upper 1-foliolate or 3-foliolate; leaflets 0.3-1.2(-1.5) cm, narrowly-elliptic to linear, mucronate; pedicel 4-8 mm; flowers 1-1.5 cm diam. at anthesis; sepals 3-4 x 1-1.5 mm, broadly lanceolate, acute, glandular, caducous; petals 7-9 mm, cław 2-2.5 mm, pinkish-violet or mauve; filaments 0.8-1 cm; capsule 4-5 x 5-7 mm, pubescent and glandular; fruit pedicel deflexed; seeds 3 x 2 mm, broadly ovate, tuberculate, with a narrow margin. Plant sparingly covered with capitate glands; lower leaves 3-foliolate, the upper 1-foliolate; leaflets 0.5-1.2(-1.5) cm; capsule to 7 mm diam., hairy.
+            </p>
+        </div>
+        <div class="right">
+            <img src="Fagonia arabica L. var. arabica.jpg" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>
+
+
+

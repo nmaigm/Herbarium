@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Lotus halophilus</strong></i> Boiss. & Spruner in Boiss.<br>
+      <i><span style="font-size: 19px; font-weight: normal;">Diagn. Pl. Orient., ser. 1, 2: 37 (1843).</span></i>
+    </h1>
+      
+    <p><strong>Synonyms:</strong><br>
+        <i>Lotus villosus </i>Forssk., Fl. Aegypt-Arab. LXXI (1775), non Burm. f., Fl. Cap. Prodr. 23 (1768).<br>
+        <i>Lotus pusillus</i> Viv., Fl. Libyc. Spec. 47 (1824), non Medicus, Bot. Beob. 1783: 226 (1784).<br>
+    </p>
+
+    <p><strong>Morphology:</strong><br>
+Annual slender herb 5-25 cm, appressed-hairy; stems few or many from the base, procumbent or ascending, branched; leaflets 0.2-1(-1.5) x 0.15-0.5 cm, ovate, obovate or broadly elliptic, acute; peduncles equalling or exceeding the subtending leaf, slender; racemes 1-4-flowered; bracts 3; calyx 4-6.5 mm, 2-lipped, the teeth shorter than the tube; corolla 0.8-1.1 cm, pale yellow; pod 1.5-3.5 x 0.15 cm, cylindrical, torulose, slightly curved, 18- to 30-seeded; seeds 1 mm, subglobose, yellowish brown, smooth.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Lotus halophilus.png" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+

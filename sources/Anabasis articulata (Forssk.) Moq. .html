@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 400px; /* Set the width of the image */
+            height:600px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Anabasis articulata</strong></i> (Forssk.) Moq. in A. DC.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Pordr. 13(2): 212 (1849).</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>Salsola articulata</i> Forssk., Fl. Aegypt.-Arab. 55 (1775).<br>
+            </p> 
+            <p><strong>Morphology:</strong><br>
+             Shrub 30-80 cm; stems with split bark; branches opposite, brittle; nodes pale green, thick, to 9 x 4 mm; leaves reduced to a 2-lobed cupule, with obtuse-mucronate tips and dense woolly hairs in their axils; flowers solitary, opposite, in spikes at the ends of branches; perianth-segments nts membranous; stamens 5, exserted; staminodes, ovary and stigmas papillose; fruiting perianth membranous; wings 5, 5-7 mm diam., almost equal, ovate-orbicular, whitish to dull pinkish; utricle erect; seeds vertical.
+            </p>
+        </div>
+        <div class="right">
+            <img src="Anabasis articulata (Forssk.) Moq.png" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>
+
+
+

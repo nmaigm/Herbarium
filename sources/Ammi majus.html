@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbarium Menu</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="styles.css"></head>
-<body>
-
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         /* Container for both the text and the image */
         .center-container {
@@ -36,33 +32,68 @@
             height:600px; /* Maintain aspect ratio */
         }
 
+    /* ---------- Responsive Design ---------- */
+    @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
     </style>
-    
-    <div class="center-container">
-        <div class="left">
-            <h1>
-                <i><strong>Ammi majus L.</strong></i><br>
-                <i><span style="font-size: 19px; font-weight: normal;">SP. pI., ed.1, 246 (1753).</span></i>
-            </h1> 
-            <p><strong>Synonyms:</strong><br>
-                <i> Apium ammi</i> crantz., Stirp. Austr.3:109(1767).<br>
-            </p> 
-            <p><strong>Morphology:</strong><br>
-                Annual erect glabrous herb up to 60 cm tall. Stem much branched in the upper part with terete and sulcate internode. Internodes reach to 7.0 cm. long. Leaves alternate, 3-4 pinnatisect, ovate-elliptic in outline, and reach to 12.0 cm. long. Lower leaves with long petiole up to 4.0 cm. long. Sheath 0.5- 1.5 x 0.2- 0.5 cm, triangular with narrow membranous margin. Blade reach to 6.5 cm. long, obovate-elliptic in outline, 2-3 pinnatisect with elliptic-lanceolate segment. Segment with serrate margin and acute apex. Upper leaves (Plate 6, Fig. B2) are sessile and ovate in outline, 2-3 pinnatisect with linear-lanceolate, serrate and acute segment. Sheath, 0.9 – 1.5 x 0.1 -0.4 cm. while blade reach to 6.0 cm.
+</head>
+<body>
+  <div class="center-container">
+    <div class="left">
+      <h1>
+        <i><strong>Ammi majus L.</strong></i><br>
+        <i><span style="font-size: 19px; font-weight: normal;">SP. pI., ed.1, 246 (1753).</span></i>
+      </h1> 
+      <p><strong>Synonyms:</strong><br>
+        <i> Apium ammi</i> crantz., Stirp. Austr.3:109(1767).<br>
+      </p> 
+      <p><strong>Morphology:</strong><br>
+Annual erect glabrous herb up to 60 cm tall. Stem much branched in the upper part with terete and sulcate internode. Internodes reach to 7.0 cm. long. Leaves alternate, 3-4 pinnatisect, ovate-elliptic in outline, and reach to 12.0 cm. long. Lower leaves with long petiole up to 4.0 cm. long. Sheath 0.5- 1.5 x 0.2- 0.5 cm, triangular with narrow membranous margin. Blade reach to 6.5 cm. long, obovate-elliptic in outline, 2-3 pinnatisect with elliptic-lanceolate segment. Segment with serrate margin and acute apex. Upper leaves (Plate 6, Fig. B2) are sessile and ovate in outline, 2-3 pinnatisect with linear-lanceolate, serrate and acute segment. Sheath, 0.9 – 1.5 x 0.1 -0.4 cm. while blade reach to 6.0 cm.
 Flowers in compound umbels inflorescence. The umbel mainly terminal on long peduncle up to 10.0 cm. long, many rayed; 15-30 rays. It is unequal; 3.5-6.0 cm. long. Flowers with long pedicel, bisexual and perfect. Bracts numerous, 1-3 pinnatisect with filiform or linear-lanceolate segments and entire or serrate margins, up to 5.0 cm. long. Bracteoles numerous, simple, subulate, entire with scarious margin and up to 5.0 mm. long. Calyx teeth minute. Corolla white or creamy petals. Petal 1.2 x 1.0 mm; obovate with equal lobes and inflexed apex. Androecium with 5 stamens, stamen with long filament and equal, dorsifixed anther lobes. Gynoecium subinferior with two carpels. Ovary with two locule, syncarpous. Styles slender deflexed and longer than short conical stylopodium.
 Fruit oblong, glabrous, dark brown, ± laterally compressed, 1.5- 2.0 x 1.3 mm, mericarps with 5 prominent ribs.
- 
-            </p>
-        </div>
-        <div class="right">
-            <img src="Ammi majus.PNG" alt="Description of the image">
-        </div>
+
+      </p>
     </div>
-    
-       
-    
+    <div class="right">
+      <img src="Ammi majus.PNG" alt="Description of the image">
+    </div>
+  </div>
 </body>
 </html>
-
-
 

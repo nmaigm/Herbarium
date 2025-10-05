@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 90vh;
+            padding: 20px;
+        }
+
+        .left {
+            flex: 1;
+            text-align: justify;
+            padding-right: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 50%;
+        }
+
+        .right img {
+            width: 450px;
+            height: 600px;
+            object-fit: cover;
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Orobanche ramosa</strong></i> L.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Sp. Pl., ed. 1, 633 (1753).</span></i>
+            </h1> 
+      
+             <p><strong>Synonyms:</strong><br>
+                <i>Phelipaea ramosa</i> (L.) C. A. Mey., Collection Pfl. Casp. Meer 104 (1831).<br>
+                <i>Phelipanche ramosa</i> (L.) Pomel, Nouv. Mat. Fl. Atlant. 1: 103 (1874).<br>
+                <i>Kopsia ramosa</i> (L.) Dumort., Comment. Bot. 16 (1822).<br>
+            </p> 
+
+            <p><strong>Morphology:</strong><br>
+Annual or short-lived perennial, 10-40 cm; stems erect, usually much-branched, swollen at the base, glandular-hairy; inflorescence of loosely branched spikes; flowers 1-1.5(-1.7) cm, subtended by 1 bract 5-8 mm, ovate-lanceolate, and 2 bracteoles 4-7 mm, linear-lanceolate; calyx 5-8 mm, 4-toothed; calyx-teeth 2-3 mm, triangular, acuminate; calyx-tube 3-5 mm; corolla 1.2-1.5(-1.8) cm, 2-lipped, glandular-hairy, ± straight, slightly inflated at the base, narrowly funnel-shaped above, cream-yellowish, whitish, bluish or violet-blue; lobes of the lower corolla-lip rounded, denticulate to ± entire; filaments glabrous or hairy at the base; capsule 5-6 mm.
+            
+</div>
+
+        <div class="right">
+            <img src="Orobanche ramosa.png" alt="Description of the image">
+        </div>
+    </div>
+</body>
+</html>

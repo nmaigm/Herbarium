@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2><a href="#">Euphorbiaceae</a></h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Acalypha wilkesiana Müll.Arg.jpg" alt="Acalypha wilkesiana Müll.Arg.">
+      <button onclick="openPage('Acalypha-wilkesiana.html')">Acalypha wilkesiana Müll.Arg.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Chrozophora oblongifolia (Delile) A.Juss.jpg" alt="Chrozophora oblongifolia (Delile) A.Juss">
+      <button onclick="openPage('Chrozophora-oblongifolia.html')">Chrozophora oblongifolia (Delile) A.Juss</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Euphorbia acalyphoides">
+      <button onclick="openPage('Euphorbia-acalyphoides.html')">Euphorbia acalyphoides</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia granulata.jpg" alt="Euphorbia granulata">
+      <button onclick="openPage('Euphorbia-granulata.html')">Euphorbia granulata</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia helioscopia.jpg" alt="Euphorbia helioscopia">
+      <button onclick="openPage('Euphorbia-helioscopia.html')">Euphorbia helioscopia</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia heterophylla L.jpg" alt="Euphorbia heterophylla L.">
+      <button onclick="openPage('Euphorbia-heterophylla.html')">Euphorbia heterophylla L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia hirta.jpg" alt="Euphorbia hirta">
+      <button onclick="openPage('Euphorbia-hirta.html')">Euphorbia hirta</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia hyssopifolia.jpg" alt="Euphorbia hyssopifolia">
+      <button onclick="openPage('Euphorbia-hyssopifolia.html')">Euphorbia hyssopifolia</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia maculata.jpg" alt="Euphorbia maculata">
+      <button onclick="openPage('Euphorbia-maculata.html')">Euphorbia maculata</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia peplus.jpg" alt="Euphorbia peplus">
+      <button onclick="openPage('Euphorbia-peplus.html')">Euphorbia peplus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Euphorbia retusa Forssk.jpg" alt="Euphorbia retusa Forssk.">
+      <button onclick="openPage('Euphorbia-retusa.html')">Euphorbia retusa Forssk.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Ricinus communis.jpg" alt="Ricinus communis">
+      <button onclick="openPage('Ricinus-communis.html')">Ricinus communis</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

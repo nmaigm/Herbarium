@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+  
+  <style>
+    /* Container for both the text and the image */
+    .center-container {
+      display: flex;
+      flex-direction: row; /* Place items side by side */
+      align-items: flex-start; /* Align the text and image at the top */
+      justify-content: space-between; /* Space the elements */
+      height: 90vh; /* 90% of the viewport height */
+      padding: 20px; /* Optional padding for spacing */
+    }
+
+    /* Style for the paragraph container */
+    .left {
+      flex: 1; /* Take up available space */
+      text-align: justify; /* Justify the text */
+      padding-right: 20px; /* Space between text and image */
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 50%; /* Keep text half width */
+    }
+
+    /* Style for the image container */
+    .right img {
+      width: 400px; 
+      height: 600px; 
+      object-fit: cover; /* Makes sure it fits nicely */
+    }
+
+        @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="left">
+      <h1>
+        <i><strong>Fagonia mollis</strong></i> Delile var. hispida Zohary.<br>
+        <i><span style="font-size: 19px; font-weight: normal;">Fl. Palaest. 2: 458, t. 361b (1972).</span></i>
+      </h1> 
+      <p><strong>Synonyms:</strong><br>
+        <i>Fagonia tristis </i>Sickenb., Mém. Inst. Egypt. 4: 201 (1901).<br>
+        <i>Fagonia tristis </i>Sickenb. var. boveana Hadidi, Candollea 21: 33, f. 10A (1966).<br>
+        <i>Fagonia boveana </i>(Hadidi) Hadidi & El Garf, Tacckholmia 12: 44 (1991).<br>
+      </p> 
+      <p><strong>Morphology:</strong><br>
+        Low shrub 20-40 cm, or perennial with woody base, glabrescent, hairy or glandular-hairy with sessile or stipitate glands; stems many, branched, angular, striate; stipular spines 0.5-1.2(-1.8) cm; leaves 3-foliolate; petiole 2-6 mm; leaflets 0.6-1.4 x 0.2-0.6 cm, ovate-elliptic, mucronate-spinulose; terminal leaflet longer and broader than the 2 laterals; pedicel 2-5 mm; flowers conspicuous, to 2 cm diam. at anthesis; sepals 2.5-4 mm, broadly-ovate, mucronate, caducous or persistent on mature fruits; petals 0.8-1.2 (-1.8) cm, pink; capsule 6 x 6-7 mm, obconical-obovoid, glandular, style 4-5 mm; seeds 2 mm, ovate, brownish. Plant hispid, with long yellowish glandular hairs and short stipitate glands; sepals becoming membranous in fruit and persistent on mature capsules.         
+      </p>
+    </div>
+
+    <div class="right">
+      <img src="Fagonia mollis Delile. var. hispida Zohary.jpg" alt="Description of the image">
+    </div>
+  </div>
+</body>
+</html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Herbarium Menu</title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
-  <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
 
@@ -32,27 +32,60 @@
     width: 400px;
     height: 600px;
   }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
 </style>
 
 <div class="center-container">
   <div class="left">
     <h1>
-      <i><strong>*</strong></i>****<br>
-      <i><span style="font-size: 19px; font-weight: normal;">******</span></i>
+      <i><strong>Silybum marianum </strong></i>(L.) Gaertn.<i> var marianum</i><br>
+      <i><span style="font-size: 19px; font-weight: normal;">Fruct. Sem. Pl. 2: 378 (1791).</span></i>
     </h1>
-    <p><strong>Synonyms:</strong><br>
-      <i>***</i>***<br>
-      <i>****</i>***<br>
-      <i>***</i>******<br>
-      <i>****</i>****<br>
-      <i>****</i>*****<br>
 
+    <p><strong>Synonyms:</strong><br>
+      <i>Carduus marianus </i>L., Sp. Pl., ed. 1, 823 (1753).<br>
     </p>  
+
     <p><strong>Morphology:</strong><br>
-        *******
-        *****
-        ****
-        *****
+        Glabrous biennial 0.4-1.5 m; stems erect, usually unbranched, sulcate; leaves to 50 x 25 cm, oblanceolate, sinuate-lobed, white-blotched, the margins spinose; basal leaves large in a rosette; the cauline smaller, sessile, shortly decurrent, with spinose basal auricles inflorescence branched; capitula solitary; phyllaries imbricate, glabrous, with a broadly oblong base 1-1.5 x 0.8-1 cm, the apex pectinate-spinose, with a spine 3-7 cm; corollas papillose, connate into a tube c. 1.5 cm; anthers c. 6 mm, linear, with an acute apical purple ; corolla-tube c. 2 cm, slender; corolla-lobes 6-7 mm; filaments glandular-appendage; style c. 3 cm, branches united almost to the apex: achenes 6-7 x 3 mm. oblong compressed; pappus 1.2-1.5 cm, of rigid white barbellate bristles, connate at the base, deciduous.
       </div>
 
   <div class="right">

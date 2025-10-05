@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Ceratonia siliqua</strong></i> L., Sp. Pl.<br>
+      <i><span style="font-size: 19px; font-weight: normal;">ed. 1, 1026 (1753).</span></i>
+    </h1>
+      
+   
+    <p><strong>Morphology:</strong><br>
+Evergreen tree 2-6 m; leaves 10-25 cm; leaflets 2-4 pairs, 3-6 x 2.5-4 cm, coriaceous, glabrous, short-petioliolate, ovate to oblong-ovate, emarginate or obtuse; racemes solitary or in groups, many flowered; female flowers with a thick deflexed ovary; style short, stigma thick; male flowers with 5 stamens; pod 8-25 x 1.5-2.5 cm, c. 5 mm thick, linear, straight or slightly curved, violet-brown, glossy, mesocarp pulpy, sweet; seeds 5-6 x 4 mm, compressed, obovate, hard, glossy.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Ceratonia siliqua.png" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+

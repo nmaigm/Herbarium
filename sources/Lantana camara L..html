@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+  
+  <style>
+    /* Container for both the text and the image */
+    .center-container {
+      display: flex;
+      flex-direction: row; /* Place items side by side */
+      align-items: flex-start; /* Align the text and image at the top */
+      justify-content: space-between; /* Space the elements */
+      height: 90vh; /* 90% of the viewport height */
+      padding: 20px; /* Optional padding for spacing */
+    }
+
+    /* Style for the paragraph container */
+    .left {
+      flex: 1; /* Take up available space */
+      text-align: justify; /* Justify the text */
+      padding-right: 20px; /* Space between text and image */
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 50%; /* Keep text half width */
+    }
+
+    /* Style for the image container */
+    .right img {
+      width: 400px; 
+      height: 600px; 
+      object-fit: cover; /* Makes sure it fits nicely */
+    }
+
+        @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="left">
+      <h1>
+        <i><strong>Lantana camara </strong></i>L.<br>
+        <i><span style="font-size: 19px; font-weight: normal;">Sp. Pl., ed. 1, 627 (1753).</span></i>
+      </h1> 
+      <p><strong>Synonyms:</strong><br>
+        <i>Lantana aculeata </i>L., Sp. Pl., ed. 1, 627 (1753).<br>
+        <i>Lantana antidotalis </i>Schumach. & Thonn., Beskr. Guin. Pl. 276 (1827).<br>
+        <i>Lantana camara </i>L. var. aculeata (L.) Mold., Torreya 34:9 (1934).<br>
+    </p> 
+      <p><strong>Morphology:</strong><br>
+Aromatic shrub 0.4-1.5 m; stems spreading, ± square in section, covered with recurved prickles; all leaves opposite, 2-8 x 2-5 cm, ovate, scabrid-rugose with course tubercle-based hairs, acute, crenate-serrate, the base subcordate; petiole 0.8-1.8 cm; flowers in axillary heads 2.5-4 cm diam.; peduncle 1.5-6 cm; bracts 4-8 x 1-2 mm; calyx 3-4 mm; corolla 0.8-1.2 cm, red, purple, pink, orange or yellow; corolla-tube densely puberulent
+outside; limb 4-8 mm, the lobes rounded; drupes 4-5.5 mm diam., fleshy, dark purple to black; pyrene c. 3.5 mm diam.
+    </div>
+    <div class="right">
+      <img src="Lantana camara L.jpg" alt="Description of the image">
+    </div>
+  </div>
+</body>
+</html>

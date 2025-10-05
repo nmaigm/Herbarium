@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Chenopodiaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Anabasis articulata (Forssk.) Moq.jpg" alt="Sample Image">
+      <button onclick="openPage('Anabasis-articulata.html')">Anabasis articulata (Forssk.) Moq.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Anabasis setifera Moq.jpg" alt="Sample Image">
+      <button onclick="openPage('Anabasis-setifera.html')">Anabasis setifera Moq.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Atriplex halimus L.jpg" alt="Sample Image">
+      <button onclick="openPage('Atriplex-halimus.html')">Atriplex halimus L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Atriplex prostrata Boucher ex DC.jpg" alt="Sample Image">
+      <button onclick="openPage('Atriplex-prostrata.html')">Atriplex prostrata Boucher ex DC.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Bassia indica (Wight) A.J.Scott.jpg" alt="Sample Image">
+      <button onclick="openPage('Bassia-indica.html')">Bassia indica (Wight) A.J.Scott</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Bassia muricata (L.) Asch.jpg" alt="Sample Image">
+      <button onclick="openPage('Bassia-muricata.html')">Bassia muricata (L.) Asch.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Chenopodium ambrosioides.jpg" alt="Sample Image">
+      <button onclick="openPage('Chenopodium-ambrosioides.html')">Chenopodium ambrosioides</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Sample Image">
+      <button onclick="openPage('Chenopodium-botrys.html')">Chenopodium botrys</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Chenopodium ficifolium.jpg" alt="Sample Image">
+      <button onclick="openPage('Chenopodium-ficifolium.html')">Chenopodium ficifolium</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Chenopodium glaucum.jpg" alt="Sample Image">
+      <button onclick="openPage('Chenopodium-glaucum.html')">Chenopodium glaucum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Chenopodium murale L.jpg" alt="Sample Image">
+      <button onclick="openPage('Chenopodium-murale.html')">Chenopodium murale L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Chenopodium vulvaria.jpg" alt="Sample Image">
+      <button onclick="openPage('Chenopodium-vulvaria.html')">Chenopodium vulvaria</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Halocnemum strobilaceum (Pall.) M.Bieb.jpg" alt="Sample Image">
+      <button onclick="openPage('Halocnemum-strobilaceum.html')">Halocnemum strobilaceum (Pall.) M.Bieb.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Halopeplis perfoliata (Forssk.) Bunge ex Asch. in Schweinf.jpg" alt="Sample Image">
+      <button onclick="openPage('Halopeplis-perfoliata.html')">Halopeplis perfoliata (Forssk.) Bunge</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Haloxylon salicornicum (Moq.) Bunge ex Boiss.jpg" alt="Sample Image">
+      <button onclick="openPage('Haloxylon-salicornicum.html')">Haloxylon salicornicum (Moq.) Bunge ex Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Haloxylon scoparium Pomel.jpg" alt="Sample Image">
+      <button onclick="openPage('Haloxylon-scoparium.html')">Haloxylon scoparium Pomel</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Salsola imbricata Forssk.jpg" alt="Sample Image">
+      <button onclick="openPage('Salsola-imbricata.html')">Salsola imbricata Forssk.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Sample Image">
+      <button onclick="openPage('Salsola-schweinfurthii.html')">Salsola schweinfurthii</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Suaeda vermiculata Forssk.ex J.F. Gmel.jpg" alt="Sample Image">
+      <button onclick="openPage('Suaeda-vermiculata.html')">Suaeda vermiculata Forssk.ex J.F. Gmel.</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

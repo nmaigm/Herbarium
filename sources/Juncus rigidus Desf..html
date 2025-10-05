@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 400px; /* Set the width of the image */
+            height:600px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Juncus rigidus</strong></i> Desf.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Fl. Atlantic. 1: 312 (1800).</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>Juncus maritimus</i> Lam. var. arabicus Asch. & Buchenau in Boiss., Fl. Orient. 5: 354 (1882).<br>
+                <i>Juncus arabicus</i> (Asch. & Buchenau) Adamson, J. Linn. Soc. Bot. 50: 10 (1935).<br>
+
+
+                <p><strong>Morphology:</strong><br>
+         
+Perennial 0.5-1 m; rhizome to 1 cm thick, creeping, woody; often laxly caespitose by frequent rhizome forking; stems 2-5 mm thick, rigid, with with 2-5 2-5 basal leaves; leaves shorter than the stem, 1.5-3 mm thick, terete, pungent; vascular bundles distributed over most of the cross-section; auricles absent; stems and leaves weakly striate; inflorescence 5-40 x 2-5 cm, lax, usually elongate, with (20-)50-150(-300) few-flowered heads; lowest 2 bracts leaf-like, pungent, with wide sheaths; the first 5-25 cm, including the sheath 2-5 cm, shorter than to much exceeding the inflorescence, forming an apparent prolongation of the stem; upper bracts small, those of the heads much shorter than the flowers; tepals 3.5-5 mm, narrowly ovate to oblong, acute to obtuse, light brown or, when young, herbaceous in central part, with broad scarious margins; capsule 3.5-5 mm, conspicuously exceeding or rarely equalling the tepals, narrowly trigonous-ovoid with a tapering trigonous apex, pale, light brown to straw-coloured; seeds 0.9-1.8 mm, including the seed-coat, with 2 appendages.
+
+</p>
+
+
+</div>
+        <div class="right">
+            <img src="Juncus rigidus Desf.png" alt="Description of the image">
+        </div>
+    </div>
+    
+          
+</body>
+</html>
+

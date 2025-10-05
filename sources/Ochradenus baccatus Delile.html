@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Ochradenus baccatus </strong></i>Delile <br>
+      <i><span style="font-size: 19px; font-weight: normal;">Descr. Egypte, Hist. Nat. 63 (1814).</span></i>
+    </h1>
+      
+    <p><strong>Morphology:</strong><br>
+Dioecious shrub 1-2.5 m, glabrous throughout; young branches slender, old branches spinescent; leaves 1-4 cm, linear; racemes many-flowered; pedicels 1-2 mm; flowers yellow; sepals 1-1.5 mm, oblong-ovate; petals usually absent; disc reflexed; stamens 10-18; berry 3-5.5 mm, globose, subsessile, white at maturity, drying red; seeds 1.5-1.8 x 1-1.5 mm, tuberculate, dark brown.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Ochradenus baccatus Delile.jpg" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+
+

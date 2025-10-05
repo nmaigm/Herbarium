@@ -4,48 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlink Groups</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 30px;
-            max-width: auto;
-            height: auto;
-        }
-        h1 {
-            font-size: 48px;
-            font-weight: bold;
-            color: #333;
-            text-transform: uppercase;
-            border-bottom: 4px solid #666;
-            padding-bottom: 10px;
-        }
-        .link-groups {
-            display: flex;
-            gap: 100px;
-        }
-        .group {
+<style>
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px 40px;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    .species {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    .link-groups {
+      display: flex;
+      gap: 40px; /* Horizontal space between each column */
+      flex-wrap: nowrap;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .group {
       display: flex;
       flex-direction: column;
       text-align:left ;
       gap: 15px;
       min-width: 250px;
     }
-        
-    </style><link rel="stylesheet" href="design.css"></head>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Changed from center to flex-start */
+      margin: 0;
+      min-height: 100vh;
+      width: 100vw;
+      overflow-x: auto;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      padding-top: 0; /* Ensure no padding at top */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px; /* Reduced from 50px */
+      margin-top: 100px; /* Ensure no margin at top */
+      padding-top: 0; /* Ensure no padding at top */
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+      border-bottom: 4px solid #666;
+      padding-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
+
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
+    }
+    
+  </style>
+
+    <link rel="stylesheet" href="design.css"></head>
 </head>
 <body>
     <div class="container">
@@ -66,7 +119,8 @@
                <a href="Cynodon dactylon (L.) Pers.html">Cynodon dactylon (L.) Pers</a>
                 <a href="Dactyloctenium aegyptium (L.) Willd..html">Dactyloctenium aegyptium (L.) Willd.</a>         
                 <a href="Dichanthium annulatum (Forssk.) Stapf.html">Dichanthium annulatum (Forssk.) Stapf</a>             
-                <a href="Digitaria ciliaris (Retz.) Koeler.html">Digitaria ciliaris (Retz.) Koeler</a> 
+                <a href="Digitaria ciliaris (Retz.) Koeler.html">Digitaria ciliaris (Retz.) Koeler</a>
+                <a href="Digitaria sanguinalis.html">Digitaria sanguinalis</a> 
                 <a href="Dinebra retroflexa.html">Dinebra retroflexa </a>              
                 <a href="Echinochloa colona (L.) Link.html">Echinochloa colona (L.) Link</a>               
                 <a href="Eragrostis tenuifolia (A. Rich.) Hochst ex Steud.html">Eragrostis tenuifolia (A. Rich.) Hochst ex Steud</a>
@@ -77,9 +131,11 @@
             <div class="group">   
                 <a href="Lolium temulentum.html">Lolium temulentum</a> 
                 <a href="Melica persica Kunth.html">Melica persica Kunth </a> 
-                <a href="Panicum coloratum L.html">Panicum coloratum L</a> 
+                <a href="Panicum coloratum L.html">Panicum coloratum L</a>
+                <a href="Panicum turgidum Forssk..html">Panicum turgidum Forssk.</a> 
                 <a href="Paspalidium geminatum.html">Paspalidium geminatum</a>                       
-                <a href="Paspalum dilatatum Poir.html">Paspalum dilatatum Poir</a>
+                <a href="Paspalum dilatatum Poir..html">Paspalum dilatatum Poir</a>
+                <a href="Pennisetum divisum.html">Pennisetum divisum</a>
                 <a href="Pennisetum setaceum.html">Pennisetum setaceum</a>  
                 <a href="Phalaris canariensis.html">Phalaris canariensis</a>                           
                 <a href="Phalaris minor Retz.html">Phalaris minor Retz</a>
@@ -97,7 +153,8 @@
                  <a href="Sorghum halepense.html">Sorghum halepense </a>
                 <a href="Sorghum virgatum (Hack.) Stapf.html">Sorghum virgatum (Hack.) Stapf</a>
                 <a href="Stipagrostis obtuse (Nees&Meyen) Hitchc. .html">Stipagrostis obtuse (Nees&Meyen) Hitchc. </a>       
-                </div>
+              <br>
+              </div>
         </div>
     </div>
 </body>

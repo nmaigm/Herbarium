@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Herbarium Menu</title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
-  <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
 
@@ -32,13 +32,52 @@
     width: 400px;
     height: 600px;
   }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
 </style>
 
 <div class="center-container">
   <div class="left">
     <h1>
       <i><strong>Reichardia tingitana</strong></i> (L.) Roth<br>
-      <i><span style="font-size: 19px; font-weight: normal;">, Bot. Abh. 35 (1787). </span></i>
+      <i><span style="font-size: 19px; font-weight: normal;">Bot. Abh. 35 (1787). </span></i>
     </h1>
     <p><strong>Synonyms:</strong><br>
       <i>Scorzonera tingitana</i> L., Sp. Pl., ed. 1, 791 (1753).<br>
@@ -53,7 +92,7 @@ Glaucous glabrescent annual 5-40 cm, papillose-scabrid; stems branched from the 
   </div>
 
   <div class="right">
-    <img src=".png" alt="Description of the image">
+    <img src="Reichardia tingitana.jpg" alt="Description of the image">
   </div>
 </div>
 

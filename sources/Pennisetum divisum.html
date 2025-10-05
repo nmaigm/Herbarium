@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 500px; /* Set the width of the image */
+            height:700px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Pennisetum divisum</strong></i> (Forssk. ex J.F. Gmel.) <br>
+                <i><span style="font-size: 19px; font-weight: normal;">Henrard, Blumea 3: 162 (1938).</span></i>
+            </h1> 
+            
+            <p><strong>Synonyms:</strong><br>
+                <i>Panicum dichotomum</i> Forssk., Fl. Aegypt.-Arab. 20 (1775), non L. (1753).<br>
+                <i>Panicum divisum </i>Forssk. ex J. F. Gmel., Syst. Nat., ed. 1791, 2(1): 156 (1791).<br>
+                <i>Pennisetum dichotomum </i>Delile, Descr. Egypte, Hist. Nat. 15, t. 8, f. 1 (1814), based on Panicum dichotomum Forssk.<br>
+                <i>Pennisetum elatum</i> Hochst. & Steud. in Steud., Nomencl. Bot., ed. 2, 2: 297 (1841).<br>
+                <i>Pennisetum asperifolium</i> Hochst. & Steud. in Steud. (1841), non (Desf.) Kunth (1829), in syn. Pennisetum elatum<br> 
+            </p> 
+
+            <p><strong>Morphology:</strong><br>
+            Perennial with short woody rhizomes; culms to 1(2) m, woody, suffruticosely branched throughout; leaf-sheaths inflated, the lower readily shedding their short blade; ligule a line of hairs; leaf-blades tightly inrolled, pungent, glaucous; panicle 5-12 cm, oblong; rhachis with shallowly angular ribs below the cupular peduncle-scars, scaberulous; involucre deciduous, enclosing 1 sessile spikelet, borne upon a short oblong stipe 0.5-1 mm; bristles glabrous, rarely thinly hairy, the longest 0.7-2 cm; spikelets 6.5-8.5 mm, narrowly lanceolate; lower glume 1/2-3/4 the length of the spikelet; upper glume almost as long as the spikelet, acute or acuminate; lemmas similar to the upper glume, lanceolate, acuminate, the lower floret male; anther-tips glabrous.
+ 
+            </p>
+        </div>
+        <div class="right">
+            <img src="Pennisetum divisum.jpg" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>

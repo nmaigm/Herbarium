@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Asteraceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Achillea fragrantissima (Forssk.) Sch.Bip..jpg" alt="Sample Image">
+      <button onclick="openPage('Achillea-fragrantissima.html')">Achillea fragrantissima (Forssk.) Sch.Bip.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Achilla santolina L..jpg" alt="Sample Image">
+      <button onclick="openPage('Achilla-santolina.html')">Achilla santolina L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Anthemis arvensis L.jpg" alt="Sample Image">
+      <button onclick="openPage('Anthemis-arvensis.html')">Anthemis arvensis L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Artemisia judaica L.jpg" alt="Sample Image">
+      <button onclick="openPage('Artemisia-judaica.html')">Artemisia judaica L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Asteriscus spinosus (L.) Sch. Bip.jpg" alt="Sample Image">
+      <button onclick="openPage('Asteriscus-spinosus.html')">Asteriscus spinosus (L.) Sch. Bip.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Bidens pilosa L..jpg" alt="Sample Image">
+      <button onclick="openPage('Bidens-pilosa.html')">Bidens pilosa</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Calendula arvensis L.jpg" alt="Sample Image">
+      <button onclick="openPage('Calendula-arvensis.html')">Calendula arvensis L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Carduncellus eriocephalus Boiss.jpg" alt="Sample Image">
+      <button onclick="openPage('Carduncellus-eriocephalus.html')">Carduncellus eriocephalus Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Sample Image">
+      <button onclick="openPage('Centaurea-postii.html')">Centaurea postii Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Conyza bonariensis (L.) Cronquist.jpg" alt="Sample Image">
+      <button onclick="openPage('Conyza-bonariensis.html')">Conyza bonariensis (L.) Cronquist</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Cotula cinerea Delile, Descr.jpg" alt="Sample Image">
+      <button onclick="openPage('Cotula-cinerea.html')">Cotula cinerea Delile, Descr.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Echinops macrochaetus Fresen.jpg" alt="Sample Image">
+      <button onclick="openPage('Echinops-macrochaetus.html')">Echinops macrochaetus Fresen.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Echinops spinosus L.jpg" alt="Sample Image">
+      <button onclick="openPage('Echinops-spinosus.html')">Echinops spinosus L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Filago mareotica Delile.jpg" alt="Sample Image">
+      <button onclick="openPage('Filago-mareotica.html')">Filago mareotica</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Glebionis coronaria (L.) Cass. ex Spach.jpg" alt="Sample Image">
+      <button onclick="openPage('Glebionis-coronaria.html')">Glebionis coronaria (L.) Cass. ex Spach</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Iphiona scabra DC. ex Decne..jpg" alt="Sample Image">
+      <button onclick="openPage('Iphiona-scabra.html')">Iphiona scabra DC. ex Decne.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Launaea nudicaulis (L.) Hook.f.jpg" alt="Sample Image">
+      <button onclick="openPage('Launaea-nudicaulis.html')">Launaea nudicaulis (L.) Hook.f.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Nauplius graveolens (Forssk.) Wiklund.jpg" alt="Sample Image">
+      <button onclick="openPage('Nauplius-graveolens.html')">Nauplius graveolens (Forssk.) Wiklund</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pluchea dioscoridis (L.) DC.jpg" alt="Sample Image">
+      <button onclick="openPage('Pluchea-dioscoridis.html')">Pluchea dioscoridis (L.) DC.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pseudognaphalium luteoalbum.jpg" alt="Sample Image">
+      <button onclick="openPage('Pseudognaphalium-luteoalbum.html')">Pseudognaphalium luteoalbum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pulicaria arabica Cass.jpg" alt="Sample Image">
+      <button onclick="openPage('Pulicaria-arabica.html')">Pulicaria arabica Cass.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pulicaria undulata (L.) C.A.Mey.jpg" alt="Sample Image">
+      <button onclick="openPage('Pulicaria-undulata.html')">Pulicaria undulata (L.) C.A.Mey.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Reichardia tingitana Roth..jpg" alt="Sample Image">
+      <button onclick="openPage('Reichardia-tingitana.html')">Reichardia tingitana Roth.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Senecio gallicus Chaix.jpg" alt="Sample Image">
+      <button onclick="openPage('Senecio-gallicus.html')">Senecio gallicus Chaix</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Silybum marianum.jpg" alt="Sample Image">
+      <button onclick="openPage('Silybum-marianum.html')">Silybum marianum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sonchus oleraceus L.jpg" alt="Sample Image">
+      <button onclick="openPage('Sonchus-oleraceus.html')">Sonchus oleraceus L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Verbesina encelioides (Cav.) Benth. & Hook.jpg" alt="Sample Image">
+      <button onclick="openPage('Verbesina-encelioides.html')">Verbesina encelioides (Cav.) Benth. & Hook.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Volutaria lippii (L.) Cass.jpg" alt="Sample Image">
+      <button onclick="openPage('Volutaria-lippii.html')">Volutaria lippii (L.) Cass</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Volutaria tubuliflora (Murb.) Sennen.jpg" alt="Sample Image">
+      <button onclick="openPage('Volutaria-tubuliflora.html')">Volutaria tubuliflora (Murb.) Sennen</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Xanthium strumarium.jpg" alt="Sample Image">
+      <button onclick="openPage('Xanthium-strumarium.html')">Xanthium strumarium</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

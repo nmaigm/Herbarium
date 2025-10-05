@@ -1,4 +1,4 @@
-<style>
+
 /* Search Bar Container */
 .search-bar {
     display: flex;
@@ -45,4 +45,40 @@
 .search-bar button:hover {
     background: #43a047;
 }
-</style>
+
+/* --- Mobile Search Bar --- */
+@media (max-width: 768px) {
+
+    .search-bar {
+        position: relative; /* so we can place button inside */
+    }
+
+    .search-bar button {
+        position: absolute;
+        right: 5px;        /* keep it inside the bar */
+        top: 15%;
+        transform: translateY(-50%); /* perfectly center vertically */
+        margin: 0;
+        height: 80%;       /* keep proportional with input */
+        aspect-ratio: 1/1; /* make button circular */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-bar input {
+        font-size: 16px;
+        padding: 10px;
+           transform: scale(0.6);   /* shrink whole form */
+        transform-origin: center; /* keep it centered */
+    }
+
+    .search-bar button {
+        font-size: 18px;
+        padding: 10px 14px;
+        border-radius: 40px;
+           transform: scale(0.8);   /* shrink whole form */
+        transform-origin: center; /* keep it centered */
+    }
+}

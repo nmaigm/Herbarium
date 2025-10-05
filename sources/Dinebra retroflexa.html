@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 400px; /* Set the width of the image */
+            height:600px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Dinebra retroflexa </strong></i>(Vahl) Panz.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Denkschr. Königl. Akad. Wiss. Munich 1813: 270, t. 12 (1814).</span></i>
+            </h1> 
+            
+            <p><strong>Synonyms:</strong><br>
+                <i>Cynosurus retroflexus</i> Vahl, Symb. Bot. 2: 20 (1791).<br>
+                <i>Dinebra arabica</i> Jacq., Fragm. Bot. 77, t. 121,1 (1809).<br>
+                <i>Dinebra (as 'Dinaeba') aegyptiaca Delile</i>, Descr. Égypte, Hist. Nat. 170, t. 11, f. 3 (1814), nom. superfl., based on Cynosurus retroflexus Vahl<br>
+            </p>
+
+            <p><strong>Morphology:</strong><br>
+         
+Loosely tufted, to 50 cm, slender, usually straggling and ascending from a decumbent base, much-branched and rooting from the lower nodes; inflorescence 8.5-17(22) cm, linear with short oblong to cuneate densely crowded racemes, more or less elliptic-oblong or pyramidal, with longer racemes to 3 cm apart; racemes 1-2.5(5) cm, stiff, at first ascending, eventually reflexed and finally deciduous; spikelets 5-6.5(9) mm, 1- to 3-flowered, narrowly cuneate; glumes coriaceous, asymmetric, overlapping abaxially and obscuring the florets; lemmas 1.8-2.4 mm, narrowly ovate, appressed-pubescent along the lateral nerves and on the back below.
+        </div>
+        
+<div class="right">
+            <img src="Dinebra retroflexa.png" alt="Description of the image">
+        </div>
+    </div>
+    
+          
+</body>
+</html>
+

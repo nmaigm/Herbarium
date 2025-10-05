@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlink Groups</title>
-  <style>
+<style>
     .checklist {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -22,7 +22,7 @@
       display: flex;
       gap: 40px; /* Horizontal space between each column */
       flex-wrap: nowrap;
-      margin-top: 30px;
+      margin-top: 10px;
       justify-content: center;
     }
 
@@ -34,7 +34,7 @@
       min-width: 250px;
     }
 
- body {
+    body {
       display: flex;
       justify-content: center;
       align-items: flex-start; /* Changed from center to flex-start */
@@ -66,17 +66,37 @@
       padding-bottom: 10px;
     }
 
-    a {
-      font-size: 21px;
-      color: #2e3f06;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
 
-    a:hover {
-      color: #879f49cc;
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
     }
-  </style>
+    
+  </style>  
     <link rel="stylesheet" href="design.css"></head>
 </head>
 <body>
@@ -88,14 +108,11 @@
   
   <div class="species"><a href="Convolvulus althaeoides.html"><i>Convolvulus althaeoides</i></a></div>
   <div class="species"><a href="Convolvulus arvensis.html"><i>Convolvulus arvensis</i></a></div>
-  <div class="species"><a href="Convolvulus hastatus.html"><i>Convolvulus hastatus</i></a></div>
   <div class="species"><a href="Cressa cretica L. .html"><i>Cressa cretica </i>  L.</a></div>
 <div class="species"><a href="Ipomoea carnea.html"><i>Ipomoea carnea</i></a></div>
-  </div>
-  <div class="group">
 <div class="species"><a href="Ipomoea purpurea (L.) Roth..html"><i>Ipomoea purpurea</i> (L.) Roth.</a></div>
+<br>  
 </div>
-
     </div>
   </div>
 </body>

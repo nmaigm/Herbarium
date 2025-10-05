@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+ 
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 400px; /* Set the width of the image */
+            height:600px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Nauplius graveolens</strong></i> (Forssk.) Wiklund<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Nord. J. Bot. 7: 16 (1987) subsp. graveolens</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>. Buphthalmum graveolens</i> Forssk., Fl. Aegypt.-Arab. 151 (1775).<br>
+                <i>Asteriscus graveolens</i> (Forssk.) Less., Syn. Gen. Compos. 210 (1832).<br>
+                <i>Odontospermum graveolens</i> (Forssk.) Sch.Bip. in Webb & Berthel. Phyt Call. 3(2): 232 (1844).<br>
+                <i>Asteriscus schimperi</i> (Boiss.) Boiss., Fl. Orient. 3: 180 (1875).<br>
+            </p> 
+
+            For full synonymy and more details, see Wiklund (1987).
+
+            <p><strong>Morphology:</strong><br>
+               Aromatic pubescent low shrub, 30-60 cm; stems much-branched and divaricate, rigid. whitish; leaves 1.5-6.5 x 0.2-1.5(-2.5) cm, oblong-obovate to narrowly oblong-linear. lobed, dentate or incised, glandular-pubescent, the lower clasping, auriculate; capitula solitary; peduncle 0.2-1.2 cm, villose, becoming thick and stiff after anthesis; involucre campanulate; phyllaries 3-seriate, the outer few, 0.8-1.6 x 0.15-0.4 cm, linear, subacute. densely glandular-hairy, herbaceous; inner phyllaries numerous, 3-5.5 x 1-2.5 mm. oblong to oblong-ovate, subacute to obtuse, sparsely hairy and glandular, indurate after anthesis; receptacle convex; paleae 3-5 x 1-1.5 mm, oblong, stiff, the apex pubescent, the midrib glandular; ray florets spreading, the corollas glandular dorsally; disc florets numerous, the corollas glandular dorsally; achenes 1.5-2 x 0.5-0.8 mm, oblong-obovate, densely hispid; pappus 0.5-2 mm, of narrow scales with an acute apex.        </div>
+
+               
+        <div class="right">
+            <img src="Nauplius graveolens (Forssk.) Wiklund.PNG" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>

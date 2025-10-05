@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Retama raetam</strong></i> (Forssk.) Webb & Berthel.<br>
+      <i><span style="font-size: 19px; font-weight: normal;">Phyt. Canar. 3 (2, 2): 56 (1842)</span></i>
+    </h1>
+    <p><strong>Synonyms:</strong><br>
+                <i>Genista raetam</i> Forssk., Fl. Aegypt.-Arab. 214 (1775).<br>
+                <i>Retama duriaei</i> (Spach) Webb, Ann. Sci. Nat. Bot., sister. 2,20: 279 (1843).<br>
+                <i>Lygos raetam</i> (Forssk.) Heywood, Feddes Repert. 79: 53 (1968).<br>
+            </p> 
+
+    <p><strong>Morphology:</strong><br>
+    Shrub 0.5-2 m; stems erect or spreading; branches green, grooved; racemes 1 to 5-flowered; corolla 1-1.5 cm, white with purplish tips; standard equalling or longer than the wings; pod 1-2 x 0.5-1 cm, indehiscent; seeds brownish.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Retama raetam (Forssk.) Webb.png" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+

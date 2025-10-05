@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herbarium Menu</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="styles.css"></head>
+    </head>
 <body>
 
 
@@ -36,6 +36,45 @@
             height:600px; /* Maintain aspect ratio */
         }
 
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
     </style>
     
     <div class="center-container">
@@ -52,7 +91,7 @@
          
 Glabrescent to sparsely pubescent perennial, 10-60 cm, with a taproot to 1 cm thick; leaves 4-25 x 2.5-16 cm, in a rosette, broadly ovate, 4-9-veined, distinctly petiolate: peduncles 7-35 cm, usually exceeding the leaves, erect or ascending, terete, often striate; spikes 3-15(-35) x 0.4-1 cm, cylindrical, dense throughout or lax below: bracts 1.5-2.5 x 1.5 mm, ovate, narrowly scarious-margined; sepals all similar, 1.5-2 x 1.5-2 mm, orbicular-obovate, obtuse to subacute, scarious-margined; corolla glabrous, the lobes 0.7-1.0 x 0.6-0.8 mm, acute; capsule 10-25-seeded; seeds 0.8-1.1 mm, rounded-angular.        </div>
         <div class="right">
-            <img src=".png" alt="Description of the image">
+            <img src="Plantago major L.png" alt="Description of the image">
         </div>
     </div>
     

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
     const contentFrame = document.getElementById("content-frame");
     const logo = document.querySelector(".logo img");
 

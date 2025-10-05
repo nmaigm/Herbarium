@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Crotalaria aegyptiaca</strong></i> Benth.<br>
+      <i><span style="font-size: 19px; font-weight: normal;">J. Bot. (London) 2: 473 (1843).</span></i>
+    </h1>
+
+    <p><strong>Morphology:</strong><br>
+    Shrub to 60 cm, much branched, usually leafless at flowering; stems ribbed, glabrous or appressed-hairy; leaves 3-8 x 2-3 mm, ovate to oblong-elliptic, pubescent; stipules absent; racemes (4-)6- to 9-flowered; flowers c. 1 cm; calyx 2-lipped; standard yellow with reddish stripes; pod c. 1 cm, oblong-ellipsoid, glabrous, 2-6-seeded; seeds c. 3 mm. smooth.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Crotalaria aegyptiaca Benth.png" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+

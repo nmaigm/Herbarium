@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+  
+  <style>
+    /* Container for both the text and the image */
+    .center-container {
+      display: flex;
+      flex-direction: row; /* Place items side by side */
+      align-items: flex-start; /* Align the text and image at the top */
+      justify-content: space-between; /* Space the elements */
+      height: 90vh; /* 90% of the viewport height */
+      padding: 20px; /* Optional padding for spacing */
+    }
+
+    /* Style for the paragraph container */
+    .left {
+      flex: 1; /* Take up available space */
+      text-align: justify; /* Justify the text */
+      padding-right: 20px; /* Space between text and image */
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 50%; /* Keep text half width */
+    }
+
+    /* Style for the image container */
+    .right img {
+      width: 400px; 
+      height: 600px; 
+      object-fit: cover; /* Makes sure it fits nicely */
+    }
+
+        @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="left">
+      <h1>
+        <i><strong>Tribulus terrestris </strong></i>L.<br>
+        <i><span style="font-size: 19px; font-weight: normal;">Sp. Pl., ed. 1, 387 (1753).</span></i>
+      </h1> 
+      <p><strong>Synonyms:</strong><br>
+        <i>Tribulus lanuginosus </i>L., Sp. Pl., ed. 1, 387 (1753).<br>
+        <i>Tribulus robustus </i>Boiss. & Noë in Boiss., Diagn. Pl. Orient., ser. 2, 1: 112 (1854).<br>
+      </p> 
+      <p><strong>Morphology:</strong><br>
+Green appressed-hairy annual; stems 20-60 cm, many, prostrate, branched, striate; leaves 3-8 cm; leaflets 5-8 pairs, 0.5-1.2 x 0.2-0.4 cm, ovate-oblong; stipules 3-4 mm; flowers 1.2-1.5 cm diam. at anthesis; pedicel 0.5-1.5 cm; sepals 3-5 mm, lanceolate; petals 0.6-1 cm, yellow; fruit 1.5-2.5 cm diam.; each mericarp with 4 spines, appressed-hairy; spines thick, rigid and sharp-pointed.    </div>
+
+    <div class="right">
+      <img src="Tribulus terrestris L.jpg" alt="Description of the image">
+    </div>
+  </div>
+</body>
+</html>

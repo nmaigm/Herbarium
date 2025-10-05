@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 500px; /* Set the width of the image */
+            height:700px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Sorghum halepense</strong></i> (L.) Pers.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Syn. 1:101 (1805).</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>Holcus halepensis</i> L., Sp. Pl., ed. 1, 1047 (1753).<br>
+                <i>Holcus exiguus </i>Forssk., Fl. Aegypt.-Arab. 174 (1775).<br>
+                <i>Andropogon halepensis </i>(L.) Brot., Fl. Lusit. 1: 89 (1804).<br>
+            </p> 
+
+
+            <p><strong>Morphology:</strong><br>
+            Rhizomatous perennial to 1.5 m, slender to rather stout; panicle 10-55 cm, lanceolate to pyramidal in outline; primary branches compound, bare at the base, ultimately bearing racemes of 1-5 spikelet-pairs; sessile spikelet 4.5-5 (5.5) mm, elliptic; lower glume keeled above, the wings of the keels widening upwards to end in minute teeth, forming with the apex a distinctly equally 3-toothed tip, pilose on the back; upper lemma acute and minutely mucronate to 2-dentate and with an awn 1-1.6 cm; pedicellate spikelet 4.5-6.5 mm, lanceolate, male.
+            
+        </p>
+
+        </div>
+        <div class="right">
+            <img src="Sorghum halepense.jpg" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>

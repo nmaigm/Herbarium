@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 400px; /* Set the width of the image */
+            height:600px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Reseda urnigera</strong> Webb, Fragm.</i><br>
+                <i><span style="font-size: 19px; font-weight: normal;">Fl. Aethiop.-Aegypt. 25 (1854).</span></i>
+            </h1>  
+
+            <p><strong>Synonyms:</strong><br>
+                <i>Reseda boissieri</i> Müll. Arg., Bot. Zeitung (Berlin) 14: 37 (1856).<br>
+                <i>Reseda cahirina </i>Müll. Arg., Monogr. Resedac. 176 (1857).<br>
+                <i>Reseda pampaniniana </i>Maire & Weiller, Bull. Soc. Hist. Nat. Afr. Nord 30: 261 (1939).<br>
+                <i>Reseda maris-mortui</i> Eig, Pal. J. Bot., Jerusalem ser., 4: 71 (1948).<br>
+            </p>
+
+            <p><strong>Morphology:</strong><br>
+            Annual herb 10-40 cm, glabrous or sparingly papillose; stems erect or ascending, branched; basal leaves spathulate, entire; upper leaves divided into 3 oblong-lanceolate lobes; flowering raceme lax, bracteate; bracts 2 mm, linear; pedicels 2-4 mm, papillose; flowers 2.5-4 mm; sepals 6, equalling the corolla, persistent; petals 6, 3-partite, white; stamens 13-20, filaments deciduous; fruiting racemes lax; fruiting pedicels 0.8-1.2 cm; capsule 0.8-1 cm, conspicuously stipitate, erect, oblong-ovoid, 3-denticulate; seeds 1 mm, reniform, smooth, brownish-yellow.
+ 
+            </p>
+        </div>
+        <div class="right">
+            <img src="Reseda urnigera.jpg" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>
+
+
+

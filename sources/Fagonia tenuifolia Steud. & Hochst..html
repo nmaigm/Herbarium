@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+  
+  <style>
+    /* Container for both the text and the image */
+    .center-container {
+      display: flex;
+      flex-direction: row; /* Place items side by side */
+      align-items: flex-start; /* Align the text and image at the top */
+      justify-content: space-between; /* Space the elements */
+      height: 90vh; /* 90% of the viewport height */
+      padding: 20px; /* Optional padding for spacing */
+    }
+
+    /* Style for the paragraph container */
+    .left {
+      flex: 1; /* Take up available space */
+      text-align: justify; /* Justify the text */
+      padding-right: 20px; /* Space between text and image */
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 50%; /* Keep text half width */
+    }
+
+    /* Style for the image container */
+    .right img {
+      width: 400px; 
+      height: 600px; 
+      object-fit: cover; /* Makes sure it fits nicely */
+    }
+
+        @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="left">
+      <h1>
+        <i><strong>Fagonia tenuifolia </strong></i>Steud. & Hochst.<br>
+        <i><span style="font-size: 19px; font-weight: normal;"> ex Boiss., Fl. Orient. 1: 909 (1867).</span></i>
+      </h1> 
+      <p><strong>Synonyms:</strong><br>
+        <i>Fagonia bischarorum </i>Schweinf., Bull. Herb. Boissier 7, App. 2: 276 (1899).<br>
+        <i>Fagonia flamandii </i>Batt., Bull. Soc. Bot. France 47: 248 (1900).<br>
+      </p> 
+      <p><strong>Morphology:</strong><br>
+Glabrous low shrub 15-25 cm; stems erect, terete, sulcate; internodes 2-4 cm; stipular spines 2-5 mm; leaves 3-foliolate; petiole 0.8-1.6 cm; leaflets 0.6-1.6 x 0.2 cm, linear, the terminal leaflet longer than the 2 lateral; pedicel 1-1.5 cm, elongate in fruit, 2-3 times as long as the capsule; flowers 1.2-1.5 cm diam. at anthesis; sepals 3-3.5 x 1.5-2 mm, ovate, glabrous, caducous; petals 6-8 mm, rose-pink; capsule 5 x 5 mm, hairy; style 2-3 mm.      </p>
+    </div>
+
+    <div class="right">
+      <img src="Fagonia tenuifolia Steud. & Hochst.jpg" alt="Description of the image">
+    </div>
+  </div>
+</body>
+</html>

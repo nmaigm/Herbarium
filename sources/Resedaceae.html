@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlink Groups</title>
-    <style>
- body {
+<style>
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px 40px;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    .species {
+      white-space: nowrap;
+      font-size: 16px;
+    }
+
+    .link-groups {
+      display: flex;
+      gap: 40px; /* Horizontal space between each column */
+      flex-wrap: nowrap;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      text-align:left ;
+      gap: 15px;
+      min-width: 250px;
+    }
+
+    body {
       display: flex;
       justify-content: center;
       align-items: flex-start; /* Changed from center to flex-start */
@@ -17,37 +46,59 @@
       font-family: Arial, sans-serif;
       padding-top: 0; /* Ensure no padding at top */
     }
-        .container {
+
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 10px; /* Reduced from 50px */
-      margin-top: 0px; /* Ensure no margin at top */
-      padding-top: 100px; /* Ensure no padding at top */
+      margin-top: 100px; /* Ensure no margin at top */
+      padding-top: 0; /* Ensure no padding at top */
     }
-        h1 {
-            font-size: 48px;
-            font-weight: bold;
-            color: #333;
-            text-transform: uppercase;
-            border-bottom: 4px solid #666;
-            padding-bottom: 10px;
-        }
-        .link-groups {
-            display: flex;
-            gap: 100px;
-        }
-        .group {
-      display: flex;
-      flex-direction: column;
-      text-align:left ;
-      gap: 15px;
-      min-width: 250px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+      border-bottom: 4px solid #666;
+      padding-bottom: 10px;
     }
-        
-    </style>
-    <link rel="stylesheet" href="design.css"></head>
+
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
+
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
+    }
+    
+  </style>
+  
+  <link rel="stylesheet" href="design.css"></head>
 </head>
 <body>
     <div class="container">
@@ -55,9 +106,10 @@
             <div class="group">
                 <a href="Ochradenus baccatus Delile.html"><i>Ochradenus baccatus Delile</i></a>
                 <a href="Reseda dentatus.html"><i>Reseda dentatus</i></a>
-                <a href="Reseda kahirno.html"><i>Reseda kahirno</i></a>
                 <a href="Reseda pruinosa Delile.html"><i>Reseda pruinosa Delile</i></a>
-            </div>
+                <a href="Reseda urnigera.html"><i>Reseda urnigera</i></a>
+                <br>
+              </div>
         </div>
     </div>  
 </body>

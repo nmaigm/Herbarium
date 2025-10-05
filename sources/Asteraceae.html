@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlink Groups</title>
-  <style>
+    <link rel="stylesheet" href="design.css"></head>
+<style>
     .checklist {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -22,7 +23,7 @@
       display: flex;
       gap: 40px; /* Horizontal space between each column */
       flex-wrap: nowrap;
-      margin-top: 30px;
+      margin-top: 10px;
       justify-content: center;
     }
 
@@ -66,16 +67,36 @@
       padding-bottom: 10px;
     }
 
-    a {
-      font-size: 21px;
-      color: #2e3f06;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
 
-    a:hover {
-      color: #879f49cc;
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
     }
+    
   </style>
 </head>
 
@@ -87,45 +108,43 @@
       <div class="group">
         <div class="species"><a href="Achillea fragrantissima.html"><i>Achillea fragrantissima</i> (Forssk.) Sch.Bip.</a></div>
         <div class="species"><a href="Achilla santolina.html"><i>Achilla santolina</i> L.</a></div>
-        <div class="species"><a href="Amberboa lippii.html"><i>Amberboa lippii</i> (L.) DC.</a></div>
-        <div class="species"><a href="Amberboa psilostachya.html"><i>Ambrosia psilostachya.</i> DC.</a></div>
         <div class="species"><a href="Anthemis arvensis.html"><i>Anthemis arvensis</i> L.</a></div>
         <div class="species"><a href="Artemisia judaica.html"><i>Artemisia judaica</i> L.</a></div>
-        <div class="species"><a href="Asteriscus graveolens.html"><i>Asteriscus graveolens</i> (Forssk.) Less.</a></div>
+        <div class="species"><a href="Asteriscus spinosus .html"><i>Asteriscus spinosus </i>(L.) Sch. Bip.</a></div>
         <div class="species"><a href="Bidens pilosa.html"><i>Bidens pilosa</i></a></div>
-        <div class="species"><a href="Brocchia cinerea.html"><i>Brocchia cinerea</i> (Delile) Vis.</a></div>
         <div class="species"><a href="Calendula arvensis.html"><i>Calendula arvensis</i> L.</a></div>
-        <div class="species"><a href="Carthamus eriocephalus.html"><i>Carthamus eriocephalus</i> (Boiss.) Greuter</a></div>
+        <div class="species"><a href="Carduncellus eriocephalus Boiss..html"><i>Carduncellus eriocephalus </i>Boiss.</a></div>
         <div class="species"><a href="Centaurea postii.html"><i>Centaurea postii</i> Boiss.</a></div>
+        <div class="species"><a href="Conyza bonariensis.html"><i>Conyza bonariensis</i> (L.) Cronquist</a></div>
       </div>
 
       <!-- Column 2 -->
       <div class="group">
-        <div class="species"><a href="Conyza bonariensis.html"><i>Conyza bonariensis</i> (L.) Cronquist</a></div>
+        <div class="species"><a href="Cotula cinerea .html"><i>Cotula cinerea</i> Delile, Descr.</a></div>
         <div class="species"><a href="Echinops macrochaetus.html"><i>Echinops macrochaetus</i> Fresen.</a></div>
         <div class="species"><a href="Echinops spinosus.html"><i>Echinops spinosus</i> L.</a></div>
         <div class="species"><a href="Filago mareotica.html"><i>Filago mareotica</i></a></div>
-        <div class="species"><a href="Francoeuria crispa.html"><i>Francoeuria crispa</i> (Forssk.) Cass.</a></div>
         <div class="species"><a href="Glebionis coronaria.html"><i>Glebionis coronaria</i> (L.) Cass. ex Spach</a></div>
         <div class="species"><a href="Iphiona scabra.html"><i>Iphiona scabra</i> DC. ex Decne.</a></div>
         <div class="species"><a href="Launaea nudicaulis.html"><i>Launaea nudicaulis</i> (L.) Hook.f.</a></div>
-        <div class="species"><a href="Pallenis spinosa.html"><i>Pallenis spinosa</i> (L.) Cass.</a></div>
+        <div class="species"><a href="Nauplius graveolens (Forssk.) Wiklund.html"><i>Nauplius graveolens</i> (Forssk.) Wiklund</a></div>
         <div class="species"><a href="Pluchea dioscoridis.html"><i>Pluchea dioscoridis</i> (L.) DC.</a></div>
         <div class="species"><a href="Pseudognaphalium luteoalbum.html"><i>Pseudognaphalium luteoalbum</i></a></div>
-        <div class="species"><a href="Pulicaria arabica.html"><i>Pulicaria arabica</i> Cass.</a></div>
       </div>
 
       <!-- Column 3 -->
       <div class="group">
+        <div class="species"><a href="Pulicaria arabica.html"><i>Pulicaria arabica</i> Cass.</a></div>
         <div class="species"><a href="Pulicaria undulata.html"><i>Pulicaria undulata</i> (L.) C.A.Mey.</a></div>
-        <div class="species"><a href="Reichardia orientalis.html"><i>Reichardia orientalis</i> (L.) Hochr.</a></div>
         <div class="species"><a href="Reichardia tingitana.html"><i>Reichardia tingitana</i> Roth.</a></div>
         <div class="species"><a href="Senecio gallicus.html"><i>Senecio gallicus</i> Chaix</a></div>
         <div class="species"><a href="Silybum marianum.html"><i>Silybum marianum</i></a></div>
         <div class="species"><a href="Sonchus oleraceus.html"><i>Sonchus oleraceus</i> L.</a></div>
         <div class="species"><a href="Verbesina encelioides.html"><i>Verbesina encelioides</i> (Cav.) Benth. & Hook.</a></div>
+        <div class="species"><a href="Volutaria lippii (L.) Cass.html"><i>Volutaria lippii</i> (L.) Cass</a></div>
         <div class="species"><a href="Volutaria tubuliflora.html"><i>Volutaria tubuliflora</i> (Murb.) Sennen</a></div>
         <div class="species"><a href="Xanthium strumarium.html"><i>Xanthium strumarium</i></a></div>
+        <br>
       </div>
 
     </div>

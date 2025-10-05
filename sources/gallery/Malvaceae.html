@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Malvaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Abelmoschus esculentus (L.) Moench.jpg" alt="Abelmoschus esculentus">
+      <button onclick="openPage('Abelmoschus-esculentus.html')">Abelmoschus esculentus (L.) Moench.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Abutilon fruticosum Guill. & Perr.jpg" alt="Abutilon fruticosum">
+      <button onclick="openPage('Abutilon-fruticosum.html')">Abutilon fruticosum Guill. & Perr.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Abutilon grandifolium (Willd.) Sweet.jpg" alt="Abutilon grandifolium">
+      <button onclick="openPage('Abutilon-grandifolium.html')">Abutilon grandifolium (Willd.) Sweet.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Abutilon pannosum (G. Forst.) Schltdl.jpg" alt="Abutilon pannosum">
+      <button onclick="openPage('Abutilon-pannosum.html')">Abutilon pannosum (G. Forst.) Schltdl.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Abutilon theophrasti Medik.jpg" alt="Abutilon theophrasti">
+      <button onclick="openPage('Abutilon-theophrasti.html')">Abutilon theophrasti Medik.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Alcea rosea L.jpg" alt="Alcea rosea">
+      <button onclick="openPage('Alcea-rosea.html')">Alcea rosea L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Gossypium barbadense L..jpg" alt="Gossypium barbadense">
+      <button onclick="openPage('Gossypium-barbadense.html')">Gossypium barbadense L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Hibiscus sabdariffa L.jpg" alt="Hibiscus sabdariffa">
+      <button onclick="openPage('Hibiscus-sabdariffa.html')">Hibiscus sabdariffa L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Hibiscus trionum L.jpg" alt="Hibiscus trionum">
+      <button onclick="openPage('Hibiscus-trionum.html')">Hibiscus trionum L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malva aegyptia L.jpg" alt="Malva aegyptia">
+      <button onclick="openPage('Malva-aegyptia.html')">Malva aegyptia L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malva multiflora (Cav.) Soldano.jpg" alt="Malva multiflora">
+      <button onclick="openPage('Malva-multiflora.html')">Malva multiflora (Cav.) Soldano</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malva neglecta Wallr.jpg" alt="Malva neglecta">
+      <button onclick="openPage('Malva-neglecta.html')">Malva neglecta Wallr</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malva nicaeensis All.jpg" alt="Malva nicaeensis">
+      <button onclick="openPage('Malva-nicaeensis.html')">Malva nicaeensis All</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malva parviflora L.jpg" alt="Malva parviflora">
+      <button onclick="openPage('Malva-parviflora.html')">Malva parviflora L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malva sylvestris L.jpg" alt="Malva sylvestris">
+      <button onclick="openPage('Malva-sylvestris.html')">Malva sylvestris L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Malvastrum coromandelianum.jpg" alt="Malvastrum coromandelianum">
+      <button onclick="openPage('Malvastrum-coromandelianum.html')">Malvastrum coromandelianum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sida alba L.jpg" alt="Sida alba">
+      <button onclick="openPage('Sida-alba.html')">Sida alba L.</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

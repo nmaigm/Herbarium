@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;     /* taller */
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr; /* 1 per row */
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Brassicaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Brassica nigra (L.) Koch.jpg" alt="Sample Image">
+      <button onclick="openPage('Brassica-nigra.html')">Brassica nigra (L.) Koch</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Brassica rapa L.jpg" alt="Sample Image">
+      <button onclick="openPage('Brassica-rapa.html')">Brassica rapa L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Brassica tournefortii Gouan.jpg" alt="Sample Image">
+      <button onclick="openPage('Brassica-tournefortii.html')">Brassica tournefortii Gouan.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Cakile maritima Scop.jpg" alt="Sample Image">
+      <button onclick="openPage('Cakile-maritima.html')">Cakile maritima Scop.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Capsella bursa-pastoris (L.) Medik.jpg" alt="Sample Image">
+      <button onclick="openPage('Capsella-bursa-pastoris.html')">Capsella bursa-pastoris (L.) Medik</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Coronopus didymus (L.) Sm.jpg" alt="Sample Image">
+      <button onclick="openPage('Coronopus-didymus.html')">Coronopus didymus (L.) Sm.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Sample Image">
+      <button onclick="openPage('Coronopus-niloticus.html')">Coronopus niloticus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Coronopus squamatus.jpg" alt="Sample Image">
+      <button onclick="openPage('Coronopus-squamatus.html')">Coronopus squamatus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Diplotaxis harra Boiss. subsp. harra.jpg" alt="Sample Image">
+      <button onclick="openPage('Diplotaxis-harra.html')">Diplotaxis harra Boiss. subsp. harra</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Enarthrocarpus lysatus (Forssk.) DC.jpg" alt="Sample Image">
+      <button onclick="openPage('Enarthrocarpus-lysatus.html')">Enarthrocarpus lysatus (Forssk.) DC.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Enarthrocarpus strangulatus.jpg" alt="Sample Image">
+      <button onclick="openPage('Enarthrocarpus-strangulatus.html')">Enarthrocarpus strangulatus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Eruca sativa.jpg" alt="Sample Image">
+      <button onclick="openPage('Eruca-sativa.html')">Eruca sativa</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Erucaria hispanica (L.) Druce.jpg" alt="Sample Image">
+      <button onclick="openPage('Erucaria-hispanica.html')">Erucaria hispanica (L.) Druce</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Erucaria microcarpa Boiss.jpg" alt="Sample Image">
+      <button onclick="openPage('Erucaria-microcarpa.html')">Erucaria microcarpa Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Farsetia aegyptia Turra.jpg" alt="Sample Image">
+      <button onclick="openPage('Farsetia-aegyptia.html')">Farsetia aegyptia Turra</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Lobularia maritima (L.) Desv.jpg" alt="Sample Image">
+      <button onclick="openPage('Lobularia-maritima.html')">Lobularia maritima (L.) Desv.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Matthiola arabica Boiss.jpg" alt="Sample Image">
+      <button onclick="openPage('Matthiola-arabica.html')">Matthiola arabica Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Matthiola longipetala (Vent.) DC.jpg" alt="Sample Image">
+      <button onclick="openPage('Matthiola-longipetala.html')">Matthiola longipetala (Vent.) DC.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Morettia canescens Boiss.jpg" alt="Sample Image">
+      <button onclick="openPage('Morettia-canescens.html')">Morettia canescens Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Moricandia nitens.jpg" alt="Sample Image">
+      <button onclick="openPage('Moricandia-nitens.html')">Moricandia nitens</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Moricandia sinaica Boiss.jpg" alt="Sample Image">
+      <button onclick="openPage('Moricandia-sinaica.html')">Moricandia sinaica Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Raphanus raphanistrum L. subsp. raphanistrum.jpg" alt="Sample Image">
+      <button onclick="openPage('Raphanus-raphanistrum.html')">Raphanus raphanistrum L. subsp. raphanistrum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Raphanus sativus L.jpg" alt="Sample Image">
+      <button onclick="openPage('Raphanus-sativus.html')">Raphanus sativus L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Rorippa palustris.jpg" alt="Sample Image">
+      <button onclick="openPage('Rorippa-palustris.html')">Rorippa palustris</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Savignya parviflora (Delile) Webb.jpg" alt="Sample Image">
+      <button onclick="openPage('Savignya-parviflora.html')">Savignya parviflora (Delile) Webb.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Schouwia purpurea (Forssk.) Schweinf.jpg" alt="Sample Image">
+      <button onclick="openPage('Schouwia-purpurea.html')">Schouwia purpurea (Forssk.) Schweinf.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sisymbrium irio.jpg" alt="Sample Image">
+      <button onclick="openPage('Sisymbrium-irio.html')">Sisymbrium irio</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sisymbrium orientale L.jpg" alt="Sample Image">
+      <button onclick="openPage('Sisymbrium-orientale.html')">Sisymbrium orientale L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Zilla spinosa (L.) Prantl subsp. spinosa.jpg" alt="Sample Image">
+      <button onclick="openPage('Zilla-spinosa.html')">Zilla spinosa (L.) Prantl subsp. spinosa</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

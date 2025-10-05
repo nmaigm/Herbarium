@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr; /* 1 per row */
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Caryophyllaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Arenaria serpyllifolia L.jpg" alt="Sample Image">
+      <button onclick="openPage('Arenaria-serpyllifolia.html')">Arenaria serpyllifolia L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Gymnocarpos decandrus Forssk.jpg" alt="Sample Image">
+      <button onclick="openPage('Gymnocarpos-decandrus.html')">Gymnocarpos decandrus Forssk.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Gypsophila capillaris C. Chr.jpg" alt="Sample Image">
+      <button onclick="openPage('Gypsophila-capillaris.html')">Gypsophila capillaris C. Chr.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Paronychia argentea Lam.jpg" alt="Sample Image">
+      <button onclick="openPage('Paronychia-argentea.html')">Paronychia argentea Lam.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pteranthus dichotomus Forssk.jpg" alt="Sample Image">
+      <button onclick="openPage('Pteranthus-dichotomus.html')">Pteranthus dichotomus Forssk</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Silene aegyptiaca.jpg" alt="Sample Image">
+      <button onclick="openPage('Silene-aegyptiaca.html')">Silene aegyptiaca</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Spergularia bocconii.jpg" alt="Sample Image">
+      <button onclick="openPage('Spergularia-bocconii.html')">Spergularia bocconii</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Spergularia diandra (Guss.) Heldr..jpg" alt="Sample Image">
+      <button onclick="openPage('Spergularia-diandra.html')">Spergularia diandra (Guss.) Heldr.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Spergularia marina.jpg" alt="Sample Image">
+      <button onclick="openPage('Spergularia-marina.html')">Spergularia marina</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Spergularia rubra.jpg" alt="Sample Image">
+      <button onclick="openPage('Spergularia-rubra.html')">Spergularia rubra</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

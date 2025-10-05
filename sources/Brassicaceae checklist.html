@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlink Groups</title>
-  <style>
+<style>
     .checklist {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -22,7 +22,7 @@
       display: flex;
       gap: 40px; /* Horizontal space between each column */
       flex-wrap: nowrap;
-      margin-top: 30px;
+      margin-top: 10px;
       justify-content: center;
     }
 
@@ -34,7 +34,7 @@
       min-width: 250px;
     }
 
- body {
+    body {
       display: flex;
       justify-content: center;
       align-items: flex-start; /* Changed from center to flex-start */
@@ -52,18 +52,10 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 10px; /* Reduced from 50px*/ 
-      margin-top: 100px; /* Ensure no margin at top*/ 
+      gap: 10px; /* Reduced from 50px */
+      margin-top: 100px; /* Ensure no margin at top */
       padding-top: 0; /* Ensure no padding at top */
-      
-            padding-bottom: 10px;
-            left: 90px ;
-            position: fixed;
-            top: 0;
-            text-align: center;   
-            z-index: 1000;
     }
-
 
     h1 {
       font-size: 48px;
@@ -74,16 +66,36 @@
       padding-bottom: 10px;
     }
 
-    a {
-      font-size: 21px;
-      color: #2e3f06;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
 
-    a:hover {
-      color: #879f49cc;
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
     }
+    
   </style>
     <link rel="stylesheet" href="design.css"></head>
 </head>
@@ -114,16 +126,15 @@
   <div class="species"><a href="Farsetia aegyptia Turra.html"><i>Farsetia aegyptia</i> Turra</a></div>
   <div class="species"><a href="Lobularia maritima (L.)Desv..html"><i>Lobularia maritima</i> (L.) Desv.</a></div>
   <div class="species"><a href="Matthiola arabica.html"><i>Matthiola arabica</i> Boiss.</a></div>
-  <div class="species"><a href="Matthiola livida.html"><i>Matthiola livida</i> (Delile) DC.</a></div>
   <div class="species"><a href="Matthiola longipetala (Vent.)DC. subsp.livida (Delile)Maire.html"><i>Matthiola longipetala</i> (Vent.) DC.</a></div>
   <div class="species"><a href="Morettia canescens.html"><i>Morettia canescens</i> Boiss.</a></div>
+<div class="species"><a href="Moricandia nitens (Viv.)Durand&Barratte.html"><i>Moricandia nitens</i></a></div>
 
 </div>
 
 <!-- Column 3 -->
 <div class="group">
-  <div class="species"><a href="Moricandia nitens (Viv.)Durand&Barratte.html"><i>Moricandia nitens</i> (Viv.) Durand & Barratte</a></div>
-  <div class="species"><a href="Moricandia sinaica.html"><i>Moricandia sinaica</i> Boiss.</a></div>
+    <div class="species"><a href="Moricandia sinaica.html"><i>Moricandia sinaica</i> Boiss.</a></div>
   <div class="species"><a href="Raphanus raphanistrum L. subsp. raphanistrum.html"><i>Raphanus raphanistrum</i> L. subsp. <i>raphanistrum</i></a></div>
   <div class="species"><a href="Raphanus sativus L..html"><i>Raphanus sativus</i> L.</a></div>
   <div class="species"><a href="Rorippa palustris.html"><i>Rorippa palustris</i></a></div>
@@ -132,6 +143,7 @@
   <div class="species"><a href="Sisymbrium irio L..html"><i>Sisymbrium irio</i></a></div>
   <div class="species"><a href="Sisymbrium orientale L..html"><i>Sisymbrium orientale</i> L.</a></div>
   <div class="species"><a href="Zilla spinosa (L.)Prantl subsp..html"><i>Zilla spinosa</i> (L.) Prantl subsp. <i>spinosa</i></a></div>
+<br>
 </div>
 
     </div>

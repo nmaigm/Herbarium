@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlink Groups</title>
-  <style>
+<style>
     .checklist {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -22,7 +22,7 @@
       display: flex;
       gap: 40px; /* Horizontal space between each column */
       flex-wrap: nowrap;
-      margin-top: 30px;
+      margin-top: 10px;
       justify-content: center;
     }
 
@@ -34,7 +34,7 @@
       min-width: 250px;
     }
 
- body {
+    body {
       display: flex;
       justify-content: center;
       align-items: flex-start; /* Changed from center to flex-start */
@@ -66,18 +66,37 @@
       padding-bottom: 10px;
     }
 
-    a {
-      font-size: 21px;
-      color: #2e3f06;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
 
-    a:hover {
-      color: #879f49cc;
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
     }
-  </style>
-    <link rel="stylesheet" href="design.css"></head>
+    
+  </style>    <link rel="stylesheet" href="design.css"></head>
 </head>
 <body>
   <div class="container">
@@ -91,7 +110,7 @@
   <div class="species"><a href="Astragalus corrugatus Bertol..html"><i>Astragalus corrugatus</i> Bertol.</a></div>
   <div class="species"><a href="Astragalus eremophilus Boiss..html"><i>Astragalus eremophilus</i> Boiss.</a></div>
   <div class="species"><a href="Astragalus sieberi DC..html"><i>Astragalus sieberi</i> DC.</a></div>
-  <div class="species"><a href="Astragalus spinosus var. kneuckeri.html"><i>Astragalus spinosus</i> var. kneuckeri</a></div>
+  <div class="species"><a href="Astragalus spinosus var. kneuckeri.html"><i>Astragalus spinosus</i> (Forssk.) Muschl.</a></div>
   <div class="species"><a href="Astragalus trigonus.html"><i>Astragalus trigonus</i></a></div>
   <div class="species"><a href="Astragalus vogelii (Webb) Bornm..html"><i>Astragalus vogelii</i> (Webb) Bornm.</a></div>
   </div>
@@ -101,7 +120,7 @@
   <div class="species"><a href="Crotalaria aegyptiaca Benth..html"><i>Crotalaria aegyptiaca</i> Benth.</a></div>
   <div class="species"><a href="Indigofera arabica Jaub. & Spach.html"><i>Indigofera arabica</i> Jaub. & Spach</a></div>
   <div class="species"><a href="Lotus halophilus.html"><i>Lotus halophilus</i></a></div>
-  <div class="species"><a href="Medicago hispida.html"><i>Medicago hispida</i></a></div>
+  <div class="species"><a href="Medicago polymorpha.html"><i>Medicago polymorpha</i> L.</a></div>
   <div class="species"><a href="Medicago sativa.html"><i>Medicago sativa</i></a></div>
   <div class="species"><a href="Melilotus albus.html"><i>Melilotus albus</i></a></div>
   <div class="species"><a href="Melilotus indicus.html"><i>Melilotus indicus</i></a></div>
@@ -118,6 +137,7 @@
   <div class="species"><a href="Vachellia tortilis subsp. raddiana (Savi) Kyal. & Boatwr..html"><i>Vachellia tortilis</i> subsp. raddiana (Savi) Kyal. & Boatwr.</a></div>
   <div class="species"><a href="Vicia narbonensis.html"><i>Vicia narbonensis</i></a></div>
   <div class="species"><a href="Vicia sativa L..html"><i>Vicia sativa</i> L.</a></div>
+<br>
 </div>
 
 </div>

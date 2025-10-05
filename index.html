@@ -1,110 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-
-    object.one{
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-
-    nav{
-        direction: ltr;
-    }
-
-
-        </style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herbal</title>
+
+  <!-- load search-bar base first so styles.css can override for tiny screens -->
+  <link rel="stylesheet" href="sources/search bar.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
+  <!-- left group: logo + hamburger -->
+  <div class="left-group">
     <div class="logo">
-          
-        <img src="sources/logo al-azhar-herbaruim.png" alt="Logo" onclick="">
-  
+      <img src="sources/logo al-azhar-herbaruim.png" alt="Logo" />
     </div>
-    <button id="menu-toggle">☰</button>
-    <nav id="navbar">
-        <ul id="menu"></ul>
-    </nav>
-    <link rel="stylesheet" href="sources/search bar.css">
-<center>
-<form class="search-bar" onsubmit="return searchPage(event)">
-    <input id="search-input" type="search" name="search" placeholder="Search species..." list="suggestions" required>
+
+    <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+
+  <!-- nav (menu list) -->
+  <nav id="navbar">
+    <ul id="menu"></ul>
+  </nav>
+
+  <!-- search form -->
+  <form class="search-bar" onsubmit="return searchPage(event)">
+    <input id="search-input" type="search" name="search" placeholder="Search species..." list="suggestions" required />
     <datalist id="suggestions"></datalist>
-    <button class="search-btn" type="submit">
-        🔍
-    </button>
-</form>
-</center>
-
-
-<script>
-let allPages = [];
-
-// Auto-load available pages from server
-fetch("/list-pages")
-    .then(res => res.json())
-    .then(pages => {
-        allPages = pages.map(p => p.toLowerCase()); // store lowercase for matching
-        const suggestionList = document.getElementById("suggestions");
-        pages.forEach(name => {
-            const option = document.createElement("option");
-            option.value = name;
-            suggestionList.appendChild(option);
-        });
-    });
-
-function searchPage(event) {
-    event.preventDefault();
-    const query = document.getElementById("search-input").value.trim().toLowerCase();
-    if (!query) return;
-
-    // Find closest match
-    let match = allPages.find(p => p.includes(query));
-
-    if (!match) {
-        alert("No matching page found for: " + query);
-        return;
-    }
-
-    const pagePath = `sources/${match}.html`;
-
-    fetch(pagePath)
-        .then(response => {
-            if (response.ok) {
-                document.getElementById("content-frame").data = pagePath;
-            } else {
-                alert("Page not found: " + match);
-            }
-        })
-        .catch(() => {
-            alert("Error loading page: " + match);
-        });
-
-    return false;
-}
-</script>
-
-
-
+    <button class="search-btn" type="submit">🔍</button>
+  </form>
 </header>
 
 <!-- Content Area -->
 <main id="content">
-     
-    <object class="one" id="content-frame"  width="100%" height="750px" data="main.html" ></object>
-    <!--object class="one"  id="content-image"  width="100%" height="750px" ></object-->
+  <object class="one" id="content-frame" width="100%" height="750px" data="main.html"></object>
 </main>
 
-<script src="script.js">
+<script src="pages.js"></script>
 
+<script>
+  // populate suggestions (pages.js must define allPages)
+  const suggestionList = document.getElementById("suggestions");
+  if (Array.isArray(allPages)) {
+    allPages.forEach(page => {
+      const option = document.createElement("option");
+      option.value = page.replace(".html", "");
+      suggestionList.appendChild(option);
+    });
+  }
 
+  function searchPage(event) {
+    event.preventDefault();
+    const input = document.getElementById("search-input").value.trim().toLowerCase();
+    const match = (allPages || []).find(page => page.toLowerCase().includes(input));
+    if (match) {
+      document.getElementById("content-frame").data = "sources/" + match;
+    } else {
+      alert("No matching species found.");
+    }
+    return false;
+  }
 </script>
 
+<script src="script.js"></script>
 </body>
 </html>

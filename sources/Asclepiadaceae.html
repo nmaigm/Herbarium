@@ -22,7 +22,7 @@
       display: flex;
       gap: 40px; /* Horizontal space between each column */
       flex-wrap: nowrap;
-      margin-top: 30px;
+      margin-top: 10px;
       justify-content: center;
     }
 
@@ -65,7 +65,38 @@
       border-bottom: 4px solid #666;
       padding-bottom: 10px;
     }
-</style>
+
+    @media (max-width: 768px) {
+      .link-groups {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+      }
+
+      .group {
+        min-width: 100%;
+        background: #ffffff00;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      a {
+        font-size: 20px; /* Bigger for mobile readability */
+        padding: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        margin-top: 40px;
+        padding: 0 15px;
+      }
+    }
+    
+  </style>
 <link rel="stylesheet" href="design.css"></head>
 <body>
     <div class="container">
@@ -76,7 +107,7 @@
     <a href="Leptadenia pyrotechnica.html"><i>Leptadenia pyrotechnica</i> (Forssk.) Decne.</a>
     <a href="Pergularia tomentosa.html"><i>Pergularia tomentosa</i> L.</a>
     <a href="Catharanthus roseus.html"><i>Vinca rosea</i> [<i>Catharanthus roseus</i>]</a>
-   
+<br>   
             </div>
         </div>
     </div>

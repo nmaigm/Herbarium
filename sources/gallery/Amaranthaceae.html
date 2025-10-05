@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Amaranthaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Aerva javanica (Burm.f.) Juss. ex Schult.jpg" alt="Sample Image">
+      <button onclick="openPage('Aerva-javanica.html')">Aerva javanica (Burm.f.) Juss. ex Schult.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Amaranthus albus L..jpg" alt="Sample Image">
+      <button onclick="openPage('Amaranthus-albus.html')">Amaranthus albus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Amaranthus blitoides.jpg" alt="Sample Image">
+      <button onclick="openPage('Amaranthus-blitoides.html')">Amaranthus blitoides</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Amaranthus caudatus.jpg" alt="Sample Image">
+      <button onclick="openPage('Amaranthus-caudatus.html')">Amaranthus caudatus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Amaranthus graecizans.jpg" alt="Sample Image">
+      <button onclick="openPage('Amaranthus-graecizans.html')">Amaranthus graecizans</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Amaranthus viridis.jpg" alt="Sample Image">
+      <button onclick="openPage('Amaranthus-viridis.html')">Amaranthus viridis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pupalia lappacea(L.) Juss..jpg" alt="Sample Image">
+      <button onclick="openPage('Pupalia-lappacea.html')">Pupalia lappacea</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

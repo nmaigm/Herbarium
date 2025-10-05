@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabaceae Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Fabaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Acacia tortilis (Forssk.).jpg" alt="Acacia tortilis">
+      <button onclick="openPage('Acacia-tortilis.html')">Acacia tortilis (Forssk.)</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Alhagi graecorum.jpg" alt="Alhagi graecorum">
+      <button onclick="openPage('Alhagi-graecorum.html')">Alhagi graecorum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Alhagi maurorum Medik.jpg" alt="Alhagi maurorum Medic.">
+      <button onclick="openPage('Alhagi-maurorum.html')">Alhagi maurorum Medic.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Astragalus corrugatus Bertol.">
+      <button onclick="openPage('Astragalus-corrugatus.html')">Astragalus corrugatus Bertol.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Astragalus eremophilus Boiss.jpg" alt="Astragalus eremophilus Boiss.">
+      <button onclick="openPage('Astragalus-eremophilus.html')">Astragalus eremophilus Boiss.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Astragalus sieberi DC.jpg" alt="Astragalus sieberi DC.">
+      <button onclick="openPage('Astragalus-sieberi.html')">Astragalus sieberi DC.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Astragalus spinosus (Forssk.) Muschl.jpg" alt="Astragalus spinosus (Forssk.) Muschl.">
+      <button onclick="openPage('Astragalus-spinosus.html')">Astragalus spinosus (Forssk.) Muschl.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Astragalus trigonus.jpg" alt="Astragalus trigonus">
+      <button onclick="openPage('Astragalus-trigonus.html')">Astragalus trigonus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Astragalus vogelii (Webb) Bornm.jpg" alt="Astragalus vogelii (Webb) Bornm.">
+      <button onclick="openPage('Astragalus-vogelii.html')">Astragalus vogelii (Webb) Bornm.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Ceratonia siliqua.jpg" alt="Ceratonia siliqua">
+      <button onclick="openPage('Ceratonia-siliqua.html')">Ceratonia siliqua</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Crotalaria aegyptiaca Benth.jpg" alt="Crotalaria aegyptiaca Benth.">
+      <button onclick="openPage('Crotalaria-aegyptiaca.html')">Crotalaria aegyptiaca Benth.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Indigofera arabica Jaub. & Spach.jpg" alt="Indigofera arabica Jaub. & Spach">
+      <button onclick="openPage('Indigofera-arabica.html')">Indigofera arabica Jaub. & Spach</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Lotus halophilus.jpg" alt="Lotus halophilus">
+      <button onclick="openPage('Lotus-halophilus.html')">Lotus halophilus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Medicago polymorpha L.jpg" alt="Medicago polymorpha L.">
+      <button onclick="openPage('Medicago-polymorpha.html')">Medicago polymorpha L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Medicago sativa.jpg" alt="Medicago sativa">
+      <button onclick="openPage('Medicago-sativa.html')">Medicago sativa</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Melilotus albus.jpg" alt="Melilotus albus">
+      <button onclick="openPage('Melilotus-albus.html')">Melilotus albus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Melilotus indicus.jpg" alt="Melilotus indicus">
+      <button onclick="openPage('Melilotus-indicus.html')">Melilotus indicus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Melilotus sulcatus.jpg" alt="Melilotus sulcatus">
+      <button onclick="openPage('Melilotus-sulcatus.html')">Melilotus sulcatus</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pisum sativum L.jpg" alt="Pisum sativum L.">
+      <button onclick="openPage('Pisum-sativum.html')">Pisum sativum L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Retama raetam (Forssk.) Webb.jpg" alt="Retama raetam (Forssk.) Webb.">
+      <button onclick="openPage('Retama-raetam.html')">Retama raetam (Forssk.) Webb.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Scorpiurus muricatus L.jpg" alt="Scorpiurus muricatus L.">
+      <button onclick="openPage('Scorpiurus-muricatus.html')">Scorpiurus muricatus L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Trifolium tomentosum L..jpg" alt="Trifolium tomentosum L.">
+      <button onclick="openPage('Trifolium-tomentosum.html')">Trifolium tomentosum L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Trigonella caerulea (L.) Ser.jpg" alt="Trigonella caerulea (L.) Ser.">
+      <button onclick="openPage('Trigonella-caerulea.html')">Trigonella caerulea (L.) Ser.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Trigonella stellata Forssk.jpg" alt="Trigonella stellata Forssk.">
+      <button onclick="openPage('Trigonella-stellata.html')">Trigonella stellata Forssk.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Vachellia tortilis subsp. raddiana (Savi) Kyal. & Boatwr.jpg" alt="Vachellia tortilis subsp. raddiana (Savi) Kyal. & Boatwr.">
+      <button onclick="openPage('Vachellia-raddiana.html')">Vachellia tortilis subsp. raddiana (Savi) Kyal. & Boatwr.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Vicia narbonensis.jpg" alt="Vicia narbonensis">
+      <button onclick="openPage('Vicia-narbonensis.html')">Vicia narbonensis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Vicia sativa L.jpg" alt="Vicia sativa L.">
+      <button onclick="openPage('Vicia-sativa.html')">Vicia sativa L.</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

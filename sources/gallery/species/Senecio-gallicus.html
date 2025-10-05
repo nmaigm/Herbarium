@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+  .gallery {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 15px;
+  }
+
+
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05); /* zoom effect on hover */
+    }
+    /* Lightbox overlay */
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 1000;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 8px;
+      transform: scale(0.8);
+      opacity: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .lightbox.active img {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .lightbox .close {
+      color: white;
+      font-size: 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .lightbox.active .close {
+      opacity: 1;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+
+
+    @media (max-width: 900px) {
+      .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+    /* Mobile: 1 image per row */
+    @media (max-width: 600px) {
+      .gallery {
+       grid-template-columns: 1fr;
+     }
+   }
+      h2 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2><a href="../../Senecio gallicus.html">Senecio gallicus</a></h2>
+
+  <div class="gallery">
+    <!-- You can put 100+ photos here, it will adjust automatically -->
+    <img src="#" alt="Sample Image">
+    <img src="#" alt="Sample Image">
+    <img src="#" alt="Sample Image"> 
+    <img src="#" alt="Sample Image"> 
+    <img src="#" alt="Sample Image">         
+            
+    <!-- add as many as you want -->
+  </div>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Preview">
+    <div class="close" id="closeBtn">&times;</div>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const closeBtn = document.getElementById('closeBtn');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active'); // add active class for animation
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      setTimeout(() => lightboxImg.src = '', 400); // wait for animation to finish
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 500px; /* Set the width of the image */
+            height:700px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Cyperus alopecuroides</strong></i> Rottb.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Descr. 21. Rar. Progr. 20 (1772).</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>Cyperus fastigiatus</i> Forssk., Fl. Aegypt.-Arab. 14 (1775).<br>
+                <i>Cyperus dives</i> Delile, Descr. Egypte, Hist. Nat. 149, t. 4, f. 3 (1814).<br>
+                <i>Juncellus alopecuroides</i> (Rottb.) C. B. Clarke, Fl. Br. Ind. 6: 595 (1893).<br>
+                <i>Chlorocyperus alopecuroides</i> (Rottb.) Grossh., Fl. Kavkaz. 1: 150 (1928).<br>
+            </p> 
+            <p><strong>Morphology:</strong><br>
+                Robust tufted perennial, with fleshy roots; rhizomes short, thick, woody; culms 0.9-1.5 m x 0.4-1 cm, generally solitary, stout, trigonus, leafy and thickened below by sheaths and intravaginal shoots; leaves shorter than the culms; leaf-sheaths papery; ligule absent; leaf-blades 0.5-1.5 cm wide, flat or folded, bright green above, pale green beneath, scabrid on the margin and upper surface, the midrib beneath and lateral veins above forming ridges: inflorescence umbel-like. 1-2 times branched, rarely capitate; bracts 4-7, leaf-like, to 70 cm; primary branches 5-10, unequal, to 25(-30) cm, smooth, subterete to trigonous below the spikes; secondary rays absent or short; spikes 1.5-5 x 0.5-1.5 cm, digitate, oblong-cylindric; rhachis hidden by numerous densely sessile spikelets; spikelets 3-7(-9) x 1-2.5 mm, spicately arranged, ovate to oblong-lanceolate, acute, slightly compressed, 6-25(-30)-flowered, reddish to golden; rhachilla straight, ± quadrangular in cross-section; glumes 1.4-1.7(-2) x c. 1 mm, ovate-elliptic, very densely imbricate, keel flat, broad, green, 3-7-veined, excurrent into a short straight mucro, the sides thin, veinless, golden with reddish stripes, enrolled in fruit, with narrow, white, decurrent wings; stamens 2 or 3; anther c. 0.8 mm; style 0.75 mm; stigmas 2(-3), papillose; nutlet 0.8-0.9 x 0.5-0.6 mm, ellipsoid to slightly obovoid, compressed, plano-convex or unequally 3-sided, minutely apiculate, shortly stipitate, minutely reticulate, glossy, golden-yellow to brown.
+ 
+            </p>
+        </div>
+        <div class="right">
+            <img src="Cyperus alopecuroides Rottb.png" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>
+
+
+

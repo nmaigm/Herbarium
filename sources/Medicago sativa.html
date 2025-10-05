@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbarium Menu</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+<style>
+  .center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 1;
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50%;
+  }
+
+  .right img {
+    width: 400px;
+    height: 600px;
+  }
+
+      @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+</style>
+
+<div class="center-container">
+  <div class="left">
+    <h1>
+      <i><strong>Medicago sativa</strong></i> L.<br>
+      <i><span style="font-size: 19px; font-weight: normal;">Sp. Pl., ed. 1, 778 (1753) subsp. sativa</span></i>
+    </h1>
+
+    <p><strong>Morphology:</strong><br>
+    Perennial herb 20-80 cm, glabrous or appressed-hairy; stems much-branched at the base; quadrangular, grooved; leaves 2-5(-6.5) cm; stipules 3-9 mm, lanceolate- acuminate, the lower toothed at the base; petiole 0.5-2 cm; leaflets 0.5-3 x 0.2-1 cm, narrowly oblong-obovate to elliptic, serrulate towards the truncate or retuse-apiculate apex, the terminal leaflet petioliolate and larger than the laterals; peduncles much longer than the subtending leaves; racemes 8- to 25-flowered; pedicels 1-2.5 mm; bracts 1-2 mm, setaceous; calyx 4-6 mm, the teeth equalling the tube; corolla 0.8-1.2 cm, blue, purple or lilac; pod 4-7 mm diam., spiral; coils 3-4, lax, unarmed, appressed-hairy or glabrous, dark brown or blackish when ripe; coil surface reticulate-veined; seeds 1.75-2.25 mm, ovoid-deltoid, yellowish-brown, smooth.    </p>
+  </div>
+
+  <div class="right">
+    <img src="Medicago sativa.png" alt="Description of the image">
+  </div>
+</div>
+
+</body>
+</html>
+

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herbarium Menu</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="styles.css"></head>
+    </head>
 <body>
 
 
@@ -36,6 +36,45 @@
             height:600px; /* Maintain aspect ratio */
         }
 
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
     </style>
     
     <div class="center-container">
@@ -50,7 +89,7 @@
          
 terete; spikes Em stemless; leaves (1.5-)5-8(-25) x (0.1-)0.3-1 cm, alternate, in rosettes, from broad Eglandular grey to white-hairy, scapose or short-stemmed annual, rarely perennial, 1-15 clasping base, linear to lanceolate, acute, entire or with a few small teeth; peduncles 1-10-30), (0.5-12-12 cm, erect or ascending, shorter to long shorter to longer than leaves, terete; (0.5-)1-2(-5) x 0.8-1(-1.5) cm, ovoid, very dense; bracts acts 1.5-4 x 1.5-3 mm, the lower broadly ovate, the upper orbicular to obovate, broadly scarious-margined; sepals 2.35 mm, elliptical to obovate, flat to cymbiform, broadly scarious-margined; anterior free of connate at base: posterior subequal, or one flat and placed behind the flower; corolla mostly glabrous, the lobes 2-3 x 2-2.5 mm, apiculate; capsule 2-seeded; seeds 2-2.5 mm thick-walled cymbiform.        </div>
         <div class="right">
-            <img src=".png" alt="Description of the image">
+            <img src="Plantago ovata Forssk.png" alt="Description of the image">
         </div>
     </div>
     

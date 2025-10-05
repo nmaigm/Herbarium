@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Poaceae</h2>
+
+  <div class="gallery">
+
+    <div class="container">
+      <img src="Gallary Photos/Agrostis stolonifera.jpg" alt="Agrostis stolonifera">
+      <button onclick="openPage('Agrostis-stolonifera.html')">Agrostis stolonifera</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Avena fatua L.jpg" alt="Avena fatua L">
+      <button onclick="openPage('Avena-fatua.html')">Avena fatua L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Avena sativa.jpg" alt="Avena sativa">
+      <button onclick="openPage('Avena-sativa.html')">Avena sativa</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Avena sterilis.jpg" alt="Avena sterilis">
+      <button onclick="openPage('Avena-sterilis.html')">Avena sterilis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Brachiaria eruciformis">
+      <button onclick="openPage('Brachiaria-eruciformis.html')">Brachiaria eruciformis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Brachiaria reptans.jpg" alt="Brachiaria reptans">
+      <button onclick="openPage('Brachiaria-reptans.html')">Brachiaria reptans</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Brachypodium distachyon (L.) P. Beauv.jpg" alt="Brachypodium distachyon">
+      <button onclick="openPage('Brachypodium-distachyon.html')">Brachypodium distachyon (L.) P. Beauv.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Bromus catharticus Vahl.jpg" alt="Bromus catharticus Vahl">
+      <button onclick="openPage('Bromus-catharticus.html')">Bromus catharticus Vahl</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Cenchrus echinatus L.jpg" alt="Cenchrus echinatus L">
+      <button onclick="openPage('Cenchrus-echinatus.html')">Cenchrus echinatus L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Cenchrus setaceus (Forssk.) Morrone.jpg" alt="Cenchrus setaceus">
+      <button onclick="openPage('Cenchrus-setaceus.html')">Cenchrus setaceus (Forssk.) Morrone</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Cynodon dactylon (L.) Pers.jpg" alt="Cynodon dactylon">
+      <button onclick="openPage('Cynodon-dactylon.html')">Cynodon dactylon (L.) Pers</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Dactyloctenium aegyptium (L.) Willd.jpg" alt="Dactyloctenium aegyptium">
+      <button onclick="openPage('Dactyloctenium-aegyptium.html')">Dactyloctenium aegyptium (L.) Willd.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Dichanthium annulatum (Forssk.) Stapf.jpg" alt="Dichanthium annulatum">
+      <button onclick="openPage('Dichanthium-annulatum.html')">Dichanthium annulatum (Forssk.) Stapf</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Digitaria ciliaris (Retz.) Koeler.jpg" alt="Digitaria ciliaris">
+      <button onclick="openPage('Digitaria-ciliaris.html')">Digitaria ciliaris (Retz.) Koeler</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Digitaria sanguinalis.jpg" alt="Digitaria sanguinalis">
+      <button onclick="openPage('Digitaria-sanguinalis.html')">Digitaria sanguinalis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Dinebra retroflexa.jpg" alt="Dinebra retroflexa">
+      <button onclick="openPage('Dinebra-retroflexa.html')">Dinebra retroflexa</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Echinochloa colona (L.) Link.jpg" alt="Echinochloa colona">
+      <button onclick="openPage('Echinochloa-colona.html')">Echinochloa colona (L.) Link</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Eragrostis tenuifolia (A. Rich.) Hochst ex Steud.jpg" alt="Eragrostis tenuifolia">
+      <button onclick="openPage('Eragrostis-tenuifolia.html')">Eragrostis tenuifolia (A. Rich.) Hochst ex Steud</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Hordeum murinum L.jpg" alt="Hordeum murinum L">
+      <button onclick="openPage('Hordeum-murinum.html')">Hordeum murinum L.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Imperata cylindrica (L.) P. Beauv.jpg" alt="Imperata cylindrica">
+      <button onclick="openPage('Imperata-cylindrica.html')">Imperata cylindrica (L.) P. Beauv.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Lolium perenne L.jpg" alt="Lolium perenne">
+      <button onclick="openPage('Lolium-perenne.html')">Lolium perenne L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Lolium temulentum.jpg" alt="Lolium temulentum">
+      <button onclick="openPage('Lolium-temulentum.html')">Lolium temulentum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Melica persica Kunth.jpg" alt="Melica persica Kunth">
+      <button onclick="openPage('Melica-persica.html')">Melica persica Kunth</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Panicum coloratum L.jpg" alt="Panicum coloratum L">
+      <button onclick="openPage('Panicum-coloratum.html')">Panicum coloratum L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Panicum turgidum Forssk.jpg" alt="Panicum turgidum Forssk">
+      <button onclick="openPage('Panicum-turgidum.html')">Panicum turgidum Forssk.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Paspalidium geminatum">
+      <button onclick="openPage('Paspalidium-geminatum.html')">Paspalidium geminatum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Paspalum dilatatum Poir.jpg" alt="Paspalum dilatatum Poir">
+      <button onclick="openPage('Paspalum-dilatatum.html')">Paspalum dilatatum Poir</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Pennisetum divisum">
+      <button onclick="openPage('Pennisetum-divisum.html')">Pennisetum divisum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pennisetum setaceum.jpg" alt="Pennisetum setaceum">
+      <button onclick="openPage('Pennisetum-setaceum.html')">Pennisetum setaceum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Phalaris canariensis.jpg" alt="Phalaris canariensis">
+      <button onclick="openPage('Phalaris-canariensis.html')">Phalaris canariensis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Phalaris minor Retz.jpg" alt="Phalaris minor Retz">
+      <button onclick="openPage('Phalaris-minor.html')">Phalaris minor Retz</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Phalaris paradoxa.jpg" alt="Phalaris paradoxa">
+      <button onclick="openPage('Phalaris-paradoxa.html')">Phalaris paradoxa</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Phragmites australis (Cav.) Trin. ex Steud.jpg" alt="Phragmites australis">
+      <button onclick="openPage('Phragmites-australis.html')">Phragmites australis (Cav.) Trin. ex Steud.</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Poa annua L.jpg" alt="Poa annua L">
+      <button onclick="openPage('Poa-annua.html')">Poa annua L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Polypogon monspeliensis.jpg" alt="Polypogon monspeliensis">
+      <button onclick="openPage('Polypogon-monspeliensis.html')">Polypogon monspeliensis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Polypogon viridis" alt="Polypogon viridis">
+      <button onclick="openPage('Polypogon-viridis.html')">Polypogon viridis</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Rostraria cristata.jpg" alt="Rostraria cristata">
+      <button onclick="openPage('Rostraria-cristata.html')">Rostraria cristata</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Setaria verticillata (L.) P. Beauv.jpg" alt="Setaria verticillata">
+      <button onclick="openPage('Setaria-verticillata.html')">Setaria verticillata (L.) P. Beauv</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sorghum arundinaceum.jpg" alt="Sorghum arundinaceum">
+      <button onclick="openPage('Sorghum-arundinaceum.html')">Sorghum arundinaceum</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sorghum bicolor (L.) Moench.jpg" alt="Sorghum bicolor">
+      <button onclick="openPage('Sorghum-bicolor.html')">Sorghum bicolor (L.) Moench</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sorghum halepense.jpg" alt="Sorghum halepense">
+      <button onclick="openPage('Sorghum-halepense.html')">Sorghum halepense</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Sorghum virgatum (Hack.) Stapf.jpg" alt="Sorghum virgatum">
+      <button onclick="openPage('Sorghum-virgatum.html')">Sorghum virgatum (Hack.) Stapf</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Stipagrostis obtusa">
+      <button onclick="openPage('Stipagrostis-obtusa.html')">Stipagrostis obtusa (Nees & Meyen) Hitchc.</button>
+    </div>
+
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>

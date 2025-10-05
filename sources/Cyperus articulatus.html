@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Menu</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+    </head>
+<body>
+
+
+    <style>
+        /* Container for both the text and the image */
+        .center-container {
+            display: flex;
+            flex-direction: row; /* Place items side by side */
+            align-items: flex-start; /* Align the text and image at the top */
+            justify-content: space-between; /* Space the elements */
+            height: 90vh; /* 90% of the viewport height */
+            padding: 20px; /* Optional padding for spacing */
+        }
+    
+        /* Style for the paragraph container */
+        .left {
+            flex: 1; /* Take up available space */
+            text-align: justify; /* Justify the text to make lines equal in length */
+            padding-right: 20px; /* Optional padding between text and image */
+            font-size: 16px; /* Adjust font size if necessary */
+            line-height: 1.6; /* Adjust line spacing for readability */
+            max-width: 50%; /* Limit the width of the text to avoid stretching */
+        }
+    
+        /* Style for the image container */
+        .right img {
+            width: 500px; /* Set the width of the image */
+            height:700px; /* Maintain aspect ratio */
+        }
+
+            @media (max-width: 1024px) {
+      .left {
+        max-width: 60%;
+        font-size: 15px;
+      }
+      .right img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .center-container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+      }
+      .left {
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .right img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 {
+        font-size: 20px;
+      }
+      .left {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .right img {
+        max-width: 100%;
+      }
+    }
+
+    </style>
+    
+    <div class="center-container">
+        <div class="left">
+            <h1>
+                <i><strong>Cyperus articulatus</strong></i> L.<br>
+                <i><span style="font-size: 19px; font-weight: normal;">Sp. Pl., ed. 1, 44 (1753).</span></i>
+            </h1> 
+            <p><strong>Synonyms:</strong><br>
+                <i>Cyperus niloticus</i> Forssk., Fl. Aegypt.-Arab. 13 (1775).<br>
+                <i>Chlorocyperus articulatus</i> (L.) Rikli, Pringsheims Jahrb. Wiss. Bot. 27: 563 (1895).<br>
+                <i>Cyperus articulatus</i> L. var. fistulosus Cuc. in Engl., Pflanzenr. 101 (IV. 20): 79 (1935).<br>
+            </p> 
+            <p><strong>Morphology:</strong><br>
+                Glabrous, robust, leafless rhizomatous perennial; roots brownish, with numerous long rootlets; stolon 2-9 mm diam., often woody, covered with scales or its remains of fibres; scales to 3 cm, ovate-lanceolate, with brown veins, purplish-brown to blackish; culms 0.7-1.6 m, 0.4-1.2 cm diam., terete, rarely flattened, gradually narrowed towards the inflorescence, stout, smooth, pith filled with transverse septa at 1-6 cm intervals, showing as rings when dry; leaves represented only by 2-5 leaf-sheaths; leaf-sheaths loose, papery; inflorescence umbel-like, 1-2 times branched; bracts often 3, 1-1.5(-2) cm, broadly lanceolate, ± equal, with acute tip and membranous red-dotted margin; rays 6-15(-20), unequal; primary branches 1-15 cm, terete to flattened, slender; spikes broadly ovoid to rounded, with numerous subdigitately arranged spikelets; rhachis to 4 mm, smooth; spikelets 0.5-4.5 x 0.1-0.2 cm, linear, compressed, acute, glossy, yellowish to pale brown, to 52-flowered; rhachilla persistent, winged, wings oblong or elliptic, membranous, persistent and connected with rhachilla; glumes 2.5-3 x c. 1.5 mm, ovate, imbricate, with narrow green keel ending below the obtuse apex; with 3 veins on each side; stamens 3; anthers c. 1 mm; style c. 0.4 mm; stigmas 3, long; nutlet 1.3-1.5 x 0.4-0.6 mm, oblong-ellipsoid, equally trigonous with acute angles and flat faces, minutely apiculate, stipitate, smooth, glossy, dark brown to purplish-black.
+ 
+            </p>
+        </div>
+        <div class="right">
+            <img src="Cyperus articulatus.png" alt="Description of the image">
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>
+
+
+

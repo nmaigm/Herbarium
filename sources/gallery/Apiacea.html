@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      align-self: flex-start;
+      margin: 20px;
+    }
+
+    h2 a {
+      text-decoration: none;
+      color: #293a08;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 9px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4fa30f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #306e00;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .container {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Apiaceae</h2>
+
+  <div class="gallery">
+    <div class="container">
+      <img src="Gallary Photos/Ammi majus L.jpg" alt="Sample Image">
+      <button onclick="openPage('Ammi-majus.html')">Ammi majus L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Ammi visnaga (L.) Lam.jpg" alt="Sample Image">
+      <button onclick="openPage('Ammi-visnaga.html')">Ammi visnaga (L.) Lam</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Anethum graveolens L.jpg" alt="Sample Image">
+      <button onclick="openPage('Anethum-graveolens.html')">Anethum graveolens L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Apium graveolens L.jpg" alt="Sample Image">
+      <button onclick="openPage('Apium-graveolens.html')">Apium graveolens L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Apium nodiflorum (L.) Lag.jpg" alt="Sample Image">
+      <button onclick="openPage('Apium-nodiflorum.html')">Apium nodiflorum (L.) Lag.</button>
+    </div>
+    
+    <div class="container">
+      <img src="Gallary Photos/Coriandrum sativum L.jpg" alt="Sample Image">
+      <button onclick="openPage('Coriandrum-sativum.html')">Coriandrum sativum L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Daucus carota.jpg" alt="Sample Image">
+      <button onclick="openPage('Daucus-carota.html')">Daucus carota</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Deverra tortuosa (Desf.) DC.jpg" alt="Sample Image">
+      <button onclick="openPage('Deverra-tortuosa.html')">Deverra tortuosa (Desf.) DC</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Eryngium campestre L.jpg" alt="Sample Image">
+      <button onclick="openPage('Eryngium-campestre.html')">Eryngium campestre L</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Eryngium creticum Lam.jpg" alt="Sample Image">
+      <button onclick="openPage('Eryngium-creticum.html')">Eryngium creticum Lam</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Eryngium glomeratum Lam.jpg" alt="Sample Image">
+      <button onclick="openPage('Eryngium-glomeratum.html')">Eryngium glomeratum Lam</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Foeniculum vulgare Mill.jpg" alt="Sample Image">
+      <button onclick="openPage('Foeniculum-vulgare.html')">Foeniculum vulgare Mill</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/#" alt="Sample Image">
+      <button onclick="openPage('Pimpinella-etbaica.html')">Pimpinella etbaica Schweinf</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pseudorlaya pumila (L.) Grande.jpg" alt="Sample Image">
+      <button onclick="openPage('Pseudorlaya-pumila.html')">Pseudorlaya pumila (L.) Grande</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Pycnocycla tomentosa Decne.jpg" alt="Sample Image">
+      <button onclick="openPage('Pycnocycla-tomentosa.html')">Pycnocycla tomentosa Decne</button>
+    </div>
+
+    <div class="container">
+      <img src="Gallary Photos/Ridolfia segetum (L.) Moris.jpg" alt="Sample Image">
+      <button onclick="openPage('Ridolfia-segetum.html')">Ridolfia segetum (L.) Moris</button>
+    </div>
+  </div>
+
+  <script>
+    function openPage(page) {
+      location.href = "species/" + page;
+    }
+  </script>
+</body>
+</html>
